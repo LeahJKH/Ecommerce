@@ -8,8 +8,9 @@ export function Footer() {
           <h1>DD</h1>
           <p>DesiDerio</p>
         </div>
+
+        <h5>Sign up for newsletter</h5>
         <div className={styles.newsletter}>
-          <h5>Sign up for newsletter</h5>
           <input type="text" name="email-footer" id="email-Footer" />
           <button>Subscribe</button>
         </div>
@@ -17,13 +18,13 @@ export function Footer() {
           <h5>Customer-service</h5>
           <h5>Want premium membership?</h5>
         </div>
-        <p className={styles.copyright}>2024 Desiderio Copyright</p>
         <div className={styles.footerIcons}>
           <img src="../../../public/icons/twitter.svg" alt="Twitter" />
           <img src="../../../public/icons/instagram.svg" alt="Instagram" />
           <img src="../../../public/icons/facebook.svg" alt="Facebook" />
           <img src="../../../public/icons/pinterest.svg" alt="Pinterest" />
         </div>
+        <p className={styles.copyright}>2024 Desiderio Copyright</p>
       </div>
     </>
   );

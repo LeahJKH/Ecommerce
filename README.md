@@ -1,4 +1,21 @@
-# React + Vite
+# Project workers
+
+- Stein
+  <sub> _CSS writer_ </sub>
+- Leah Yoimiya
+  <sub> _Team leader_ </sub>
+- Jesper
+  <sub> _Design leader_ </sub>
+- Ferhat
+  <sub> _React leader_ </sub>
+- Kristoffer
+  <sub>_Backend leader_</sub>
+- ~~Håvard~~
+  <sub> _~~Design leader~~_ </sub>
+
+# Extra stuff
+
+### React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 

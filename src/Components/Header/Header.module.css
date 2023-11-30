@@ -1,16 +1,25 @@
 .headerContainer {
   padding: 30px;
-  background: #eadfdf;
+  background: #0e0d0d;
   display: flex;
+  color: #f3ebeb;
 }
 
 .pagesList {
   margin-left: auto;
-  display: flex;
+  text-decoration: none;
   list-style-type: none;
 }
 
 .pages {
   text-decoration: none;
   margin-right: 30px;
+}
+.userCart {
+  display: flex;
+  justify-content: end;
+}
+h1,
+p {
+  text-align: center;
 }

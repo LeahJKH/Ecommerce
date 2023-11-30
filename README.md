@@ -1,17 +1,24 @@
 # Project workers
 
+### Current workers
+
 - Stein
-  <sub> _CSS writer_ </sub>
+  <sub> _CSS writer_ _Helper_ </sub>
 - Leah Yoimiya
-  <sub> _Team leader_ </sub>
+  <sub> _Team leader_, _Github leader_ </sub>
 - Jesper
   <sub> _Design leader_ </sub>
 - Ferhat
   <sub> _React leader_ </sub>
 - Kristoffer
   <sub>_Backend leader_</sub>
+
+### Past workers
+
 - ~~Håvard~~
   <sub> _~~Design leader~~_ </sub>
+- ~~Sindre~~
+  <sub> _~~Github leader~~_ </sub>
 
 # Extra stuff
 

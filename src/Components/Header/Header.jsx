@@ -9,12 +9,14 @@ export function Header() {
           <h1>DD</h1>
           <p>DesDerio</p>
         </div>
-
-        <img src="" alt="User Icon" />
-        <img src="" alt="Shopping cart" />
-        <img src="" alt="Magnifying glass" />
-        <img src="" alt="Hamburger" />
-
+        <div className={styles.userCart}>
+          <img src="" alt="User Icon" />
+          <img src="" alt="Shopping cart" />
+        </div>
+        <div className={styles.searchHam}>
+          <img src="" alt="Magnifying glass" />
+          <img src="" alt="Hamburger" />
+        </div>
         <ul className={styles.pagesList}>
           <li>
             <Link to="/" className="pages">

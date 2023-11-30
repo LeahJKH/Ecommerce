@@ -19,10 +19,12 @@ export default function Shop() {
   }, []);
 
   return (
-    <div className={Styles.productGrid}>
-      {products.map((product, index) => (
-        <ProductCard key={index} product={product} />
-      ))}
+    <div className={Styles.centering}>
+      <div className={Styles.productGrid}>
+        {products.map((product, index) => (
+          <ProductCard key={index} product={product} />
+        ))}
+      </div>
     </div>
   );
 }

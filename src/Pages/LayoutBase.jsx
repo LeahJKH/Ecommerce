@@ -1,18 +1,17 @@
 import { Outlet } from "react-router-dom";
-import { Footer} from "../Components/Footer/Footer";
-import { Header} from "../Components/Header/Header";
+import { Footer } from "../Components/Footer/Footer";
+import { Header } from "../Components/Header/Header";
 
+export function LayoutBase() {
+  return (
+    <>
+      <Header />
 
-export function LayoutBase(){
-    return (
-        <>
-        <Header/>
+      <div>
+        <Outlet />
+      </div>
 
-        <div>
-            <Outlet/>
-        </div>
-
-        <Footer/>
-       </>
-    )
+      <Footer />
+    </>
+  );
 }

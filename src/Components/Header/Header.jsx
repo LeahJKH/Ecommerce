@@ -28,6 +28,24 @@ export function Header() {
               Contact
             </Link>
           </li>
+          <li>
+            <Link to="/shop" className="pages">
+              {" "}
+              Shop
+            </Link>
+          </li>
+          <li>
+            <Link to="/ShoppingCart" className="pages">
+              {" "}
+              ShoppingCart
+            </Link>
+          </li>
+          <li>
+            <Link to="/Settings" className="pages">
+              {" "}
+              Settings
+            </Link>
+          </li>
         </ul>
       </div>
     </>

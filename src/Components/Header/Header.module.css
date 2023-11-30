@@ -1,16 +1,40 @@
 .headerContainer {
-  padding: 30px;
-  background: #eadfdf;
+  font-family: "Poppins", sans-serif;
+  padding: 20px;
+  background: #0e0d0d;
   display: flex;
+  justify-content: space-around;
+  color: #f3ebeb;
 }
 
 .pagesList {
   margin-left: auto;
-  display: flex;
+  text-decoration: none;
   list-style-type: none;
 }
 
 .pages {
   text-decoration: none;
   margin-right: 30px;
+}
+.userCart {
+  display: flex;
+  gap: 10px;
+}
+.searchHam {
+  display: flex;
+  gap: 10px;
+}
+.logo {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.logo h1 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 50px;
+}
+.logo p {
+  margin-top: 0px;
 }

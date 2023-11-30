@@ -1,10 +1,10 @@
-import "./Footer.css";
+import styles from "./footer.module.css";
 
 export function Footer() {
   return (
     <>
-      <div className="footer--container">
-        <h1 className="footer--tittle">DD</h1>
+      <div className={styles.footerContainer}>
+        <h1 className={styles.footerTitle}>DD</h1>
         <p>DesDerio</p>
         <h5>Sign up too newsletter</h5>
         <input type="text" name="email-footer" id="email-Footer" />

@@ -6,18 +6,18 @@ export function Header() {
     <>
       <div className={styles.headerContainer}>
         <div className={styles.userCart}>
-          <img src="" alt="User Icon" />
-          <img src="" alt="Shopping cart" />
+          <img src="./icons/person.svg" alt="User Icon" />
+          <img src="../../icons/basket.svg" alt="Shopping cart" />
         </div>
         <div className={styles.logo}>
           <h1>DD</h1>
           <p>DesDerio</p>
         </div>
         <div className={styles.searchHam}>
-          <img src="" alt="Magnifying glass" />
-          <img src="" alt="Hamburger" />
+          <img src="../../icons/search.svg" alt="Magnifying glass" />
+          <img src="../../icons/Hamburgermenu.svg" alt="Hamburger" />
         </div>
-        <ul className={styles.pagesList}>
+        {/* <ul className={styles.pagesList}>
           <li>
             <Link to="/" className="pages">
               Home
@@ -52,7 +52,7 @@ export function Header() {
               Settings
             </Link>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </>
   );

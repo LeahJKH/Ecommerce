@@ -1,7 +1,7 @@
-.header--container {
+.headerContainer {
   padding: 30px;
-  background-color: aquamarine;
-  text-align: center;
+  background: #0e0e0e;
+
   display: flex;
 }
 

@@ -5,8 +5,11 @@ export function Header() {
   return (
     <>
       <div className={styles.headerContainer}>
-        <h1>DD</h1>
-        <p>DesDerio</p>
+        <div className={styles.logo}>
+          <h1>DD</h1>
+          <p>DesDerio</p>
+        </div>
+
         <img src="" alt="User Icon" />
         <img src="" alt="Shopping cart" />
         <img src="" alt="Magnifying glass" />

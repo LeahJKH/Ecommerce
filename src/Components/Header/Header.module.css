@@ -1,0 +1,17 @@
+.header--container {
+  padding: 30px;
+  background-color: aquamarine;
+  text-align: center;
+  display: flex;
+}
+
+.pagesList {
+  margin-left: auto;
+  display: flex;
+  list-style-type: none;
+}
+
+.pages {
+  text-decoration: none;
+  margin-right: 30px;
+}

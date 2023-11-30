@@ -1,4 +1,4 @@
-import Styles from "../../Pages/Shop/Shop.module.css";
+import Styles from "./ProductCard.module.css";
 
 export function ProductCard({ product }) {
   return (

@@ -20,7 +20,7 @@ export default function Shop() {
 
   return (
     <div className={Styles.centering}>
-      <div className={Styles.productGrid}>
+      <div>
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

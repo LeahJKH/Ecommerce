@@ -2,7 +2,7 @@ import "./App.css";
 import { LandingPage } from "./Pages/LandingPage";
 import { LayoutBase } from "./Pages/LayoutBase";
 import Userpage from "./Pages/UserPage/UserPage";
-import { Catagory } from "./Pages/Catagory/Catagory";
+import { Category } from "./Pages/Catagory/Catagory";
 import { Contact } from "./Pages/Contact/Contact";
 import Settings from "./Pages/Settings/Settings";
 import Shop from "./Pages/Shop/Shop";
@@ -17,7 +17,7 @@ function App() {
           <Route index element={<LandingPage />} />
           <Route path="/UserPage" element={<Userpage />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/Catagories" element={<Catagory />} />
+          <Route path="/Catagories" element={<Category />} />
           <Route path="/Shop" element={<Shop />} />
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
           <Route path="/Settings" element={<Settings />} />

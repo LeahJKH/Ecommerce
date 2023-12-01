@@ -1,4 +1,5 @@
 import "./MainContent.css";
+import {ModalLogginn} from "../ModalLogginn/ModalLogginn.jsx"
 
 export function MainContent() {
   return (
@@ -11,6 +12,7 @@ export function MainContent() {
         <h1>Recomended for you</h1>
         <div className="List-recomanded"></div>
       </div>
+      <ModalLogginn/>
     </>
   );
 }

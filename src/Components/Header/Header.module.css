@@ -1,3 +1,5 @@
+/* CSS for mobile to 768px */
+
 .headerContainer {
   font-family: "Poppins", sans-serif;
   padding: 15px;
@@ -37,4 +39,10 @@
 }
 .logo p {
   margin-top: 0px;
+}
+
+@media (min-width: 768px) {
+  img {
+    display: none;
+  }
 }

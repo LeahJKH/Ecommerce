@@ -11,7 +11,7 @@ export function Header() {
         </div>
         <div className={styles.logo}>
           <h1>DD</h1>
-          <p>DesDerio</p>
+          <p>DesiDerio</p>
         </div>
         <div className={styles.searchHam}>
           <img src="../../icons/search.svg" alt="Magnifying glass" />

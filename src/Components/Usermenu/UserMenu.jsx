@@ -1,8 +1,9 @@
-export default function Hamburger() {
+import Style from "./UserMenu.module.css";
+export default function UserMenu() {
   return (
     <>
       <div>
-        <h1>X</h1>
+        <h1 className={Style.CrossOut}>X</h1>
         <img src="../../../public/icons/person.svg" alt="User icon" />
         <h6>Name</h6>
         <p>View profile</p>

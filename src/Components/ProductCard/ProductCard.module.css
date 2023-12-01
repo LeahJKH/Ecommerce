@@ -36,10 +36,25 @@
   height: 50px;
 }
 .descStyles {
-  height: 80px;
+  height: 85px;
   color: #6016c1;
   font-weight: 800;
   padding: 10px;
-  word-break: break-all;
+
   overflow-y: scroll;
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #484747;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0d0d0d;
 }

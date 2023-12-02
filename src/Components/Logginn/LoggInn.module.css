@@ -1,22 +1,13 @@
-
-
-
 .loggInnContainer{
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
-    width: 100%;
-    
+    max-width: 100%;
     margin-right: auto;
     margin-left: auto;
     flex: 1;
     background: #E7E7E7;
     margin: 6px;
-    padding: 1.125em;
-
-   
-   
-    
-
+    padding: 1.125em; 
 }
 .singUpTitle{
     text-align: center;
@@ -39,6 +30,10 @@
     border: 0.0625em solid #000 ;
     font-size: 1.375em;
     box-sizing: border-box;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 30px;
+    text-align: center;
     
 }
 
@@ -47,11 +42,25 @@
     font-weight: 700;
     text-align: center;
     color: #000;
+  
+}
+.singUpForm input[type=text]{
     
+    background-image: url('/public/icons/user.svg');
+   
+}
+
+.singUpForm input[type=email]{
+    
+    background-image: url('/public/icons/email.svg');
+
 }
 
 .singUpForm input[type=password]{
     margin-bottom: 2.25em;
+    background-image: url('/public/icons/password.svg');
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
 }
 
 .formSingUpButton{

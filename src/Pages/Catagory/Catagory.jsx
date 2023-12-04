@@ -1,5 +1,5 @@
-import React from "react";
 import Style from "./Catagory.module.css";
+// import categories from "../../Components/Data/catergory-data.js"
 
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },
@@ -11,18 +11,18 @@ const categories = [
 ];
 
 export function Category() {
+  const [Changed, noChange] = useState("");
+  function HandleCatagoryChange() {}
+  const apiUrl = "https://fakestoreapi.com/products";
+  (categories.name || apiUrl.category).toLowerCase().includes(Changed);
   return (
     <div className={Style.category}>
       <h2>Category Page</h2>
       <div className={Style.categoryContainer}>
         {categories.map((category, index) => (
           <div key={index} className={Style.categoryCard}>
-            <h3>{category.name}</h3>
-            <img
-              className={Style.cardImage}
-              src={category.image}
-              alt={category.name}
-            />
+            <h3 onClick={HandleCatagoryChange}>{category.name}</h3>
+            <img className={Style.cardImage} src={category.image} alt={category.name} />
           </div>
         ))}
       </div>

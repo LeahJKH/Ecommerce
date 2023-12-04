@@ -1,7 +1,7 @@
 import Style from "./UserMenu.module.css";
 export default function UserMenu({ toggleUserMenu }) {
   return (
-    <>
+    <div>
       <div className={Style.Flexify}>
         <h1 className={Style.CrossOut} onClick={toggleUserMenu}>
           X
@@ -27,6 +27,6 @@ export default function UserMenu({ toggleUserMenu }) {
         </div>
         <p></p>
       </div>
-    </>
+    </div>
   );
 }

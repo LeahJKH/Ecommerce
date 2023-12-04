@@ -1,4 +1,5 @@
-import "./ModalLogginn.css"
+import "./ModalLogginn.css";
+import { useEffect,useState } from "react";
 
 export function ModalLogginn(){
     return(
@@ -6,7 +7,7 @@ export function ModalLogginn(){
             <div className="modal" id="modal">
                 <div className="modal-header">
                     <img className="modal-logo" src="/dd.png" alt="" />
-                    <button className="modal-close-btn" id="modal-close-btn">X</button>
+                    <button className="modal-close-btn" id="modal-close-btn" onClick={closeModal}>X</button>
                 </div>
                 <div className="modal-inner" id="modal-inner">
                     <p className="modal-text" id="modal-text">Sign Up and Enjoy Personalized Experiences</p>	
@@ -25,5 +26,12 @@ export function ModalLogginn(){
                 </div>
             </div>
         </>
+    )
+}
+
+
+const closeModal = () => {
+    return(
+        modal.style.display = "none"
     )
 }

@@ -1,7 +1,9 @@
+
 import { useState, useEffect } from "react";
 import Styles from "./catagory.module.css";
 import Style from "./Shop.module.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
+
 
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },

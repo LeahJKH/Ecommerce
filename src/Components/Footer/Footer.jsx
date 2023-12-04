@@ -9,8 +9,8 @@ export function Footer() {
           <p>DesiDerio</p>
         </div>
 
-        <h5>Sign up for newsletter</h5>
         <div className={styles.newsletter}>
+          <h5>Sign up for newsletter</h5>
           <input type="text" name="email-footer" id="email-Footer" />
           <button>Subscribe</button>
         </div>

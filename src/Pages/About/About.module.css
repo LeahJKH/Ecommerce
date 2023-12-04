@@ -1,5 +1,40 @@
 .aboutcontainer {
   background-color: #f3ebeb;
-  padding: 15px;
   color: #0e0d0d;
+  text-align: start;
+  font-family: "Poppins", sans-serif;
+  margin: 5px 10px;
+}
+
+.section {
+  color: #f3ebeb;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #0e0d0d;
+  box-shadow: 0 0 10px rgba(196, 15, 15, 0.1);
+}
+.section h1 {
+  text-align: center;
+}
+.section1,
+.section2,
+.section3,
+.section4,
+.section5,
+.section6,
+.section7,
+.section8,
+.section9 {
+  margin-bottom: 40px;
+  border-bottom: 1px solid #f3ebeb;
+}
+
+@media screen and (min-width: 768px) {
+  .aboutcontainer {
+    font-size: 18px;
+  }
+  .section {
+    padding: 30px;
+  }
 }

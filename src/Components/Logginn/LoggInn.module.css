@@ -21,12 +21,12 @@
 }
 
 
-.singUpTitle{
+.loggInnTitle{
     text-align: center;
     font-size: 1.325em;
     margin: 0em 0em 1.9375em 0em ;
 }
-.singUpForm{
+.loggInnForm{
     display: grid;
     grid-template-columns: 25em;
     gap: 1.125em;
@@ -35,7 +35,7 @@
 
 }
 
-.singUpForm input{
+.loggInnForm input{
     height: 3.125em;
     max-height: 3.125rem;
     border-radius: 0.5em;
@@ -49,33 +49,33 @@
     
 }
 
-.singUpForm input::placeholder{
+.loggInnForm input::placeholder{
     font-family: 'Source Code Pro', monospace;
     font-weight: 700;
     text-align: center;
     color: #000;
   
 }
-.singUpForm input[type=text]{
+.loggInnForm input[type=text]{
     
     background-image: url('/public/icons/user.svg');
    
 }
 
-.singUpForm input[type=email]{
+.loggInnForm input[type=email]{
     
     background-image: url('/public/icons/email.svg');
 
 }
 
-.singUpForm input[type=password]{
+.loggInnForm input[type=password]{
     margin-bottom: 2.25em;
     background-image: url('/public/icons/password.svg');
     background-position: 10px 10px; 
     background-repeat: no-repeat;
 }
 
-.formSingUpButton{
+.formButton{
     margin-bottom: 5.375em;
     height: 3.125em;
     max-height: 3.125rem;
@@ -85,12 +85,12 @@
     font-weight: inherit;
     font-size: 1.375em;
 }
-.singInText{
+.bottomText{
     text-align: center;
     font-size: 1.125em;
     margin: 0px;
 
 }
-.singInText a{
+.bottomText a{
     color: #24FF00;
 }

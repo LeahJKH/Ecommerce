@@ -1,11 +1,12 @@
 import "./MainContent.css";
 import {ModalLogginn} from "../ModalLogginn/ModalLogginn.jsx";
-import {LoggInn} from "../Logginn/LoggInn.jsx";
+import {SingIn} from "../Logginn/SingIn.jsx";
+import {SingUp} from "../Logginn/SingUp.jsx"
 
 export function MainContent() {
   return (
     <>
-      <LoggInn/>
+      <SingIn/>
       <ModalLogginn/>
     </>
   );

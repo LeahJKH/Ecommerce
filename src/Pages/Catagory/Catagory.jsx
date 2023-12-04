@@ -14,6 +14,7 @@ const categories = [
 
 export function Category() {
   const [selectedCategory, setSelectedCategory] = useState("");
+  const [showShop, setShowShop] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
@@ -27,32 +28,36 @@ export function Category() {
 
   function handleCategoryChange(categoryName) {
     setSelectedCategory(categoryName);
+    setShowShop(true);
   }
 
   return (
     <div className={Styles.category}>
       <h2>Category Page</h2>
-      <div className={Styles.categoryContainer}>
-        {categories.map((category, index) => (
-          <div key={index} className={Styles.categoryCard}>
-            <h3 onClick={() => handleCategoryChange(category.name)}>{category.name}</h3>
-            <img className={Styles.cardImage} src={category.image} alt={category.name} />
+      {showShop ? (
+        <div className={Style.centering}>
+          <div className={Style.cardFlex}>
+            {products
+              .filter(
+                (product) =>
+                  !selectedCategory ||
+                  product.category.toLowerCase() === selectedCategory.toLowerCase()
+              )
+              .map((product, index) => (
+                <ProductCard key={index} product={product} />
+              ))}
           </div>
-        ))}
-      </div>
-      <div className={Style.centering}>
-        <div className={Style.cardFlex}>
-          {products
-            .filter(
-              (product) =>
-                !selectedCategory ||
-                product.category.toLowerCase() === selectedCategory.toLowerCase()
-            )
-            .map((product, index) => (
-              <ProductCard key={index} product={product} />
-            ))}
         </div>
-      </div>
+      ) : (
+        <div className={Styles.categoryContainer}>
+          {categories.map((category, index) => (
+            <div key={index} className={Styles.categoryCard}>
+              <h3 onClick={() => handleCategoryChange(category.name)}>{category.name}</h3>
+              <img className={Styles.cardImage} src={category.image} alt={category.name} />
+            </div>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

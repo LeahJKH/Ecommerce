@@ -3,7 +3,7 @@
 ### Current workers
 
 - Stein
-  <sub> _CSS writer_, _Helper_ </sub>
+  <sub> _CSS writer_, _Helper_, _Picture leader_ </sub>
 - Leah Yoimiya
   <sub> _Team leader_, _Github leader_ </sub>
 - Jesper

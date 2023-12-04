@@ -1,3 +1,23 @@
 .CrossOut {
   color: red;
+  text-align: end;
+  margin: 20px;
+}
+.MenuImg {
+  width: 40px;
+}
+.Flexify {
+  display: flex;
+  flex-direction: column;
+}
+.Flexify > h3,
+h2 {
+  margin: 0;
+}
+.Flexify > div {
+  display: flex;
+  flex-direction: row;
+}
+.UserImg {
+  width: 60px;
 }

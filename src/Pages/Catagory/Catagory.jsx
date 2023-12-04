@@ -1,5 +1,5 @@
-import React from "react";
 import Style from "./Catagory.module.css";
+// import categories from "../../Components/Data/catergory-data.js"
 
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },

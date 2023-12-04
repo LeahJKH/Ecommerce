@@ -2,7 +2,7 @@ import Style from "./Hamburger.module.css";
 export default function Hamburger({ toggleBurgerMenu }) {
   return (
     <>
-      <div>
+      <div className={Style.Background}>
         <h1 className={Style.CrossOut} onClick={toggleBurgerMenu}>
           X
         </h1>

@@ -1,4 +1,3 @@
-import { useState } from "react";
 import Style from "./Catagory.module.css";
 
 const categories = [

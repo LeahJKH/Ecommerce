@@ -1,18 +1,22 @@
 import "./MainContent.css";
-import {ModalLogginn} from "../ModalLogginn/ModalLogginn.jsx"
+import {ModalLogginn} from "../ModalLogginn/ModalLogginn.jsx";
+import {LoggInn} from "../Logginn/LoggInn.jsx";
 
 export function MainContent() {
   return (
     <>
-      <div className="mainContent--container">
-        <h1 className="main--tittle">HomePage--Main</h1>
-        <div className="Carusel-fav-items"></div>
-        <h1>Catagories</h1>
-        <div className="carusel-Catagories"></div>
-        <h1>Recomended for you</h1>
-        <div className="List-recomanded"></div>
-      </div>
+      <LoggInn/>
       <ModalLogginn/>
     </>
   );
 }
+
+
+/*<div className="mainContent--container">
+<h1 className="main--tittle">HomePage--Main</h1>
+<div className="Carusel-fav-items"></div>
+<h1>Catagories</h1>
+<div className="carusel-Catagories"></div>
+<h1>Recomended for you</h1>
+<div className="List-recomanded"></div>
+</div>*/

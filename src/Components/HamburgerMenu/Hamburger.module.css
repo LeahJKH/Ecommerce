@@ -1,0 +1,22 @@
+.CrossOut {
+  color: red;
+  text-align: end;
+  margin: 20px;
+}
+.WrapCatagories {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.WrapCatagories > p {
+  margin: 10px;
+  font-size: 20px;
+}
+.MenuImg {
+  width: 40px;
+}
+.rowThemMenu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

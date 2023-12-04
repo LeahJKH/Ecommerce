@@ -8,6 +8,7 @@ import Settings from "./Pages/Settings/Settings";
 import Shop from "./Pages/Shop/Shop";
 import ShoppingCart from "./Pages/ShoppingCart/ShoppingCart";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Aboutpage from "./Pages/About/About";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/Shop" element={<Shop />} />
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
           <Route path="/Settings" element={<Settings />} />
+          <Route path="/About" element={<Aboutpage />} />
           <Route path="*" element={<h1>404 Not Found</h1>} />
         </Route>
       </Routes>

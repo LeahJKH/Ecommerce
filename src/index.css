@@ -2,5 +2,8 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color: #f3ebeb;
+  background-color: #ffffff;
+
+  /*main container skal dekke rest plass*/
+  min-height: 100%;
 }

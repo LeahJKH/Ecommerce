@@ -4,19 +4,9 @@ export default function About() {
   return (
     <>
       <div className={style.aboutcontainer}>
-        <div className={style.header}>
-          <h1>Desiderio</h1>
-          <p>Where shopping meets simplicity.</p>
-        </div>
-
         <div className={style.section}>
           <div className={style.section1}>
-            <h2>Welcome to Your Online Store!</h2>
-            <p>
-              Embark on a delightful shopping experience with Your Brand. We
-              believe in making fashion accessible to everyone, offering a
-              curated collection of trendy and affordable items.
-            </p>
+            <h1>Welcome to Desiderio!</h1>
           </div>
           <div className={style.section2}>
             <h2>Our Story</h2>
@@ -31,7 +21,7 @@ export default function About() {
             <h2>Mission Statement</h2>
             <p>
               Our mission is simple yet powerful: to redefine online shopping.
-              We aspire to offer high-quality, affordable fashion that empowers
+              We aspire to offer high-quality, expensive fashion that empowers
               individuals to express their unique style.
             </p>
           </div>

@@ -101,8 +101,4 @@
   .sendbutton:hover {
     background-color: #3b0b79;
   }
-  .forminput input:focus,
-  .formtextarea textarea:focus {
-    border-color: #6016c1;
-  }
 }

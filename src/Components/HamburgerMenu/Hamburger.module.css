@@ -43,7 +43,6 @@
 .MenuImg {
   width: 40px;
 }
-
 .logoutxicon {
   padding-left: 30px;
   display: flex;
@@ -55,7 +54,5 @@
 @media (min-width: 768px) {
   .homecat {
     display: flex;
-  }
-  .WrapCatagories {
   }
 }

@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 .CrossOut {
   text-align: center;

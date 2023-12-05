@@ -52,7 +52,12 @@
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .homecat {
+  .Background {
     display: flex;
+  }
+  .WrapCatagories {
+    display: contents;
+    align-items: center;
+    width: 100%;
   }
 }

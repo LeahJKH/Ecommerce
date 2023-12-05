@@ -1,6 +1,19 @@
-import "./Shopping.css"
+import { useState } from "react";
+import "./Shopping.css";
 
 export default function ShoppingCart() {
+  const [quantity, setQuantity] = useState(1);
+
+  const handleIncrement = () => {
+    setQuantity(quantity + 1);
+  };
+
+  const handleDecrement = () => {
+    if (quantity > 1) {
+      setQuantity(quantity - 1);
+    }
+  };
+
   return (
     <div className="shoppingCart">
       <h2>Shopping Cart</h2>
@@ -12,9 +25,9 @@ export default function ShoppingCart() {
             <p>Price</p>
           </div>
           <div className="item_increment">
-            <button>+</button>
-            <p>1</p>
-            <button>-</button>
+            <button onClick={handleIncrement}>+</button>
+            <p>{quantity}</p>
+            <button onClick={handleDecrement}>-</button>
           </div>
         </div>
       </div>

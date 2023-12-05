@@ -1,3 +1,4 @@
+/* SHOPPING CART */
 .shoppingCart {
   display: flex;
   align-items: center;
@@ -12,6 +13,7 @@
   padding: 5px;
 }
 
+/* LIST ITEMS */
 .list_item {
   background-color: grey;
   border-radius: 20px;
@@ -22,12 +24,13 @@
 }
 
 .list_item > img {
-  border-radius: 60px;
   border: 1px solid white;
+  border-radius: 20px;
+  margin-right: 10px;
 }
 
 .item_info {
-  
+  margin-right: auto;
 }
 
 .item_increment {
@@ -35,6 +38,15 @@
   text-align: center;
 }
 
+.item_increment > button {
+  border: white solid 1px;
+  border-radius: 20px;
+  background-color: black;
+  color: white;
+  font-size: 25px;
+}
+
+/* CHECKOUT SECTION */
 .checkout {
   width: 100%;
   border-top: 1px solid black;

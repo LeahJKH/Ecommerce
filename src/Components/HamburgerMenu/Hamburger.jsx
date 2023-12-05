@@ -1,25 +1,28 @@
 import Style from "./Hamburger.module.css";
+import { Link } from "react-router-dom";
 export default function Hamburger({ toggleBurgerMenu }) {
   return (
     <>
       <div className={Style.Background}>
-        <h1 className={Style.CrossOut} onClick={toggleBurgerMenu}>
-          X
-        </h1>
         <div className={Style.WrapCatagories}>
-          <p>Cars</p>
-          <p>Boats</p>
-          <p>House</p>
-          <p>Clothes</p>
-          <p>Family</p>
-          <p>Jewelry</p>
-        </div>
-        <div className={Style.rowThemMenu}>
-          <div>
-            <p>About</p>
-            <p>Contact</p>
+          <div className={Style.homecat}>
+            <Link to="/Catagories">Categories</Link>
+            <Link to="/">Home</Link>
           </div>
-          <img src="../../../public/icons/Loggout.svg" alt="" className={Style.MenuImg} />
+          <div className={Style.rowThemMenu}>
+            <Link to="/About">About</Link>
+            <Link to="/Contact">Contact</Link>
+          </div>
+        </div>
+        <div className={Style.logoutxicon}>
+          <h1 className={Style.CrossOut} onClick={toggleBurgerMenu}>
+            X
+          </h1>
+          <img
+            src="../../../public/icons/Loggout.svg"
+            alt="Logout-icon"
+            className={Style.MenuImg}
+          />
         </div>
       </div>
     </>

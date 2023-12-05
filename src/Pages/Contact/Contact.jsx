@@ -4,7 +4,7 @@ export function Contact() {
     <>
       <div className={style.contactPagecontainer}>
         <div className={style.headertext}>
-          <h1>Contact the creators of Desiderio</h1>
+          <h1>Contact the creators of DesiDerio</h1>
           <p>
             We have the <span>worlds best customer service. </span>Subscribe to
             our premium membership, and we will respond within 5 minutes. Feel

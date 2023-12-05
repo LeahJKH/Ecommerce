@@ -1,22 +1,61 @@
+.Background {
+  background-color: #f3ebeb;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
 .CrossOut {
-  color: red;
-  text-align: end;
-  margin: 20px;
+  text-align: center;
 }
 .WrapCatagories {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-direction: row; */
+  font-size: 20px;
+  gap: 50px;
+  margin-top: 30px;
+}
+.WrapCatagories a {
+  text-decoration: none;
+  color: #0e0d0d;
+  font-weight: bold;
 }
 .WrapCatagories > p {
   margin: 10px;
   font-size: 20px;
 }
-.MenuImg {
-  width: 40px;
+.homecat {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
 }
 .rowThemMenu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
+  /* flex-direction: row; */
+
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.MenuImg {
+  width: 40px;
+}
+
+.logoutxicon {
+  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+  margin-bottom: 10px;
+}
+@media (min-width: 768px) {
+  .homecat {
+    display: flex;
+  }
+  .WrapCatagories {
+  }
 }

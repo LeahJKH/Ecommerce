@@ -2,9 +2,11 @@
   .contactPagecontainer {
     font-family: "Poppins", sans-serif;
     text-align: center;
-    background-color: #f3ebeb;
+    background-color: #0e0d0d;
     padding: 30px;
-    color: #0e0d0d;
+    color: #f3ebeb;
+    margin: 5px 10px;
+    border-radius: 12px;
   }
   .contactPagecontainer span {
     font-weight: bold;
@@ -15,7 +17,7 @@
     max-width: 400px;
     padding: 20px;
     border: 1px solid #ccc;
-    border-radius: 15px;
+    border-radius: 12px;
     background-color: #0e0d0d;
     color: #f3ebeb;
   }
@@ -39,7 +41,7 @@
     color: white;
     padding: 10px 15px;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     cursor: pointer;
   }
 }

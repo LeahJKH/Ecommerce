@@ -1,26 +1,24 @@
-.loggInn{
-    padding: 10px;
+.loggInn {
+  padding: 10px;
+  background-color: #0e0d0d;
 }
 
-@media (max-width:768px) {
-    .loggInn{
-        background-color: #0e0d0d;
-    }
+@media (max-width: 768px) {
+  .loggInn {
+    background-color: #0e0d0d;
+  }
 }
 
-.loggInnContainer{
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 700;
-    max-width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    flex: 1;
-    background: #E7E7E7;
-   
-    padding: 1.125em; 
+.loggInnContainer {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  flex: 1;
+  background: #e7e7e7;
+  padding: 1.125em;
 }
-
-
 .loggInnTitle{
     text-align: center;
     font-size: 1.325em;
@@ -33,7 +31,71 @@
     align-items: center;
     justify-content: center;
 
+.singUpTitle {
+  text-align: center;
+  font-size: 1.325em;
+  margin: 0em 0em 1.9375em 0em;
 }
+.singUpForm {
+  display: grid;
+  grid-template-columns: 25em;
+  gap: 1.125em;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.singUpForm input {
+  height: 3.125em;
+  max-height: 3.125rem;
+  border-radius: 0.5em;
+  border: 0.0625em solid #000;
+  font-size: 1.375em;
+  box-sizing: border-box;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 30px;
+  text-align: center;
+}
+
+.singUpForm input::placeholder {
+  font-family: "Source Code Pro", monospace;
+  font-weight: 700;
+  text-align: center;
+  color: #000;
+}
+.singUpForm input[type="text"] {
+  background-image: url("/public/icons/user.svg");
+}
+
+.singUpForm input[type="email"] {
+  background-image: url("/public/icons/email.svg");
+}
+
+.singUpForm input[type="password"] {
+  margin-bottom: 2.25em;
+  background-image: url("/public/icons/password.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.formSingUpButton {
+  margin-bottom: 5.375em;
+  height: 3.125em;
+  max-height: 3.125rem;
+  border-radius: 0.5em;
+  border: 0.0625em solid #000;
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: 1.375em;
+}
+.singInText {
+  text-align: center;
+  font-size: 1.125em;
+  margin: 0px;
+}
+.singInText a {
+  color: #24ff00;
 
 .loggInnForm input{
     height: 3.125em;

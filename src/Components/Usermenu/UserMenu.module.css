@@ -1,5 +1,4 @@
 .CrossOut {
-  color: red;
   text-align: end;
   margin: 20px;
 }
@@ -9,6 +8,9 @@
 .Flexify {
   display: flex;
   flex-direction: column;
+  background-color: #f3ebeb;
+  text-align: start;
+  border-bottom: 1px solid #0e0d0d;
 }
 .Flexify > h3,
 h2 {
@@ -16,8 +18,16 @@ h2 {
 }
 .Flexify > div {
   display: flex;
-  flex-direction: row;
+  padding-bottom: 10px;
+  justify-content: center;
+  gap: 5px;
 }
 .UserImg {
   width: 60px;
+}
+@media screen and (min-width: 768px) {
+  .Flexify {
+    font-size: 20px;
+    gap: 10px;
+  }
 }

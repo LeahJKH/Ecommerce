@@ -7,6 +7,8 @@
   margin: 5px;
 }
 .Flexify {
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   background-color: #f3ebeb;
@@ -14,6 +16,7 @@
   border-bottom: 1px solid #0e0d0d;
   gap: 5px;
   justify-content: center;
+  align-items: center;
 }
 .Flexify > h3,
 h2 {
@@ -42,7 +45,13 @@ h2 {
 }
 @media screen and (min-width: 768px) {
   .Flexify {
+    display: flex;
     font-size: 20px;
-    gap: 10px;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Flexify2 {
+    margin: 10px;
   }
 }

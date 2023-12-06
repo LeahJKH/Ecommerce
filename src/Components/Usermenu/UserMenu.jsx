@@ -2,9 +2,6 @@ import Style from "./UserMenu.module.css";
 export default function UserMenu({ toggleUserMenu }) {
   return (
     <div className={Style.Flexify}>
-      <h1 className={Style.CrossOut} onClick={toggleUserMenu}>
-        X
-      </h1>
       <div>
         <img
           src="../../../public/icons/personBlack.svg"
@@ -38,6 +35,9 @@ export default function UserMenu({ toggleUserMenu }) {
           <span>Log out</span>
         </h3>
       </div>
+      <h1 className={Style.CrossOut} onClick={toggleUserMenu}>
+        X
+      </h1>
       <p></p>
     </div>
   );

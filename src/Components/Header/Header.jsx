@@ -1,10 +1,22 @@
 import styles from "./Header.module.css";
 import UserMenu from "../Usermenu/UserMenu";
 import Hamburger from "../HamburgerMenu/Hamburger";
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
 
 export function Header() {
+  const [itemsSaved, setItemsSaved] = useState(0);
+
+  useEffect(() => {
+    let totalQuantity = 0;
+  
+    for (let i = 0; i < 30; i++) {
+      const cartItems = JSON.parse(localStorage.getItem(i)) || [];
+      totalQuantity += cartItems.reduce((total, item) => total + (item.quantity || 0 - 1), 0);
+    }
+  
+    setItemsSaved(totalQuantity);
+  }, []);
+
   function LinkHandle() {
     location.href="/ShoppingCart"
   } 
@@ -32,7 +44,8 @@ function GoHome() {
       <div className={styles.headerContainer}>
         <div className={styles.userCart}>
           <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} className={styles.cursorClicking} />
-          <img src="../../icons/basket.svg" alt="Shopping cart" onClick={LinkHandle} className={styles.cursorClicking}/>
+          <img src="../../icons/basket.svg" alt="Shopping cart" onClick={LinkHandle}  className={styles.cursorClicking}/>
+          <p>{itemsSaved}</p>
         </div>
         <div className={styles.logo} >
           <h1 onClick={GoHome} className={styles.cursorClicking}>DD</h1>

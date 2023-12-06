@@ -1,9 +1,7 @@
-
 import { useState, useEffect } from "react";
 import Styles from "./catagory.module.css";
 import Style from "./Shop.module.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
-
 
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },
@@ -15,7 +13,10 @@ const categories = [
 ];
 
 export function Category() {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState(() => {
+    return localStorage.getItem("selectedCategory") || "";
+  });
+
   const [showShop, setShowShop] = useState(false);
   const [products, setProducts] = useState([]);
 
@@ -31,6 +32,7 @@ export function Category() {
   function handleCategoryChange(categoryName) {
     setSelectedCategory(categoryName);
     setShowShop(true);
+    localStorage.setItem("selectedCategory", categoryName);
   }
 
   return (
@@ -64,11 +66,11 @@ export function Category() {
   );
 }
 
-// The Shop component remains unchanged and is exported as a named export
-export function Shop({ selectedCategory }) {
+export function Shop() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
+    const selectedCategory = localStorage.getItem("selectedCategory") || "";
     const apiUrl = "https://fakestoreapi.com/products";
 
     fetch(apiUrl)
@@ -84,7 +86,7 @@ export function Shop({ selectedCategory }) {
       .catch((error) => {
         console.error("Error fetching data:", error);
       });
-  }, [selectedCategory]);
+  }, []);
 
   return (
     <div className={Style.centering}>

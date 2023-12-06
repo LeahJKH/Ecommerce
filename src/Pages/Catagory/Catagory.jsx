@@ -1,14 +1,12 @@
-
 import { useState, useEffect } from "react";
 import Styles from "./catagory.module.css";
 import Style from "./Shop.module.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
-
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },
   { name: "Cars", image: "../../../public/pictures/cars.png" },
-  { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
+  { name: "Clothing", image: "../../../public/pictures/clothes.png" },
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
@@ -43,7 +41,8 @@ export function Category() {
               .filter(
                 (product) =>
                   !selectedCategory ||
-                  product.category.toLowerCase() === selectedCategory.toLowerCase()
+                  product.category.toLowerCase() ===
+                    selectedCategory.toLowerCase()
               )
               .map((product, index) => (
                 <ProductCard key={index} product={product} />
@@ -54,8 +53,14 @@ export function Category() {
         <div className={Styles.categoryContainer}>
           {categories.map((category, index) => (
             <div key={index} className={Styles.categoryCard}>
-              <h3 onClick={() => handleCategoryChange(category.name)}>{category.name}</h3>
-              <img className={Styles.cardImage} src={category.image} alt={category.name} />
+              <h3 onClick={() => handleCategoryChange(category.name)}>
+                {category.name}
+              </h3>
+              <img
+                className={Styles.cardImage}
+                src={category.image}
+                alt={category.name}
+              />
             </div>
           ))}
         </div>
@@ -76,7 +81,9 @@ export function Shop({ selectedCategory }) {
       .then((data) => {
         const filteredProducts = selectedCategory
           ? data.filter(
-              (product) => product.category.toLowerCase() === selectedCategory.toLowerCase()
+              (product) =>
+                product.category.toLowerCase() ===
+                selectedCategory.toLowerCase()
             )
           : data;
         setProducts(filteredProducts);

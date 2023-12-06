@@ -28,18 +28,6 @@ h2 {
   justify-content: center;
 }
 
-.Flexify2 span:hover {
-  cursor: pointer;
-  color: rgb(26, 194, 26);
-}
-.Flexify3:hover {
-  cursor: pointer;
-  color: rgb(26, 194, 26);
-}
-.Flexify4:hover {
-  cursor: pointer;
-  color: rgb(26, 194, 26);
-}
 .UserImg {
   width: 55px;
 }
@@ -53,5 +41,17 @@ h2 {
   }
   .Flexify2 {
     margin: 10px;
+  }
+  .Flexify2 span:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
+  }
+  .Flexify3:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
+  }
+  .Flexify4:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
   }
 }

@@ -19,7 +19,6 @@ function App() {
           <Route path="/UserPage" element={<Userpage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Catagories" element={<Category />} />
-
           <Route path="/ShoppingCart" element={<ShoppingCart />} />
           <Route path="/Settings" element={<Settings />} />
           <Route path="/About" element={<Aboutpage />} />

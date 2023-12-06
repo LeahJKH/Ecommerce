@@ -1,0 +1,117 @@
+.Comp {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+  height: 460px;
+  width: 350px;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 2px #666;
+  background: #0e0d0d;
+  color: whitesmoke;
+  padding: 16px;
+  font-family: "Source Code Pro", monospace;
+}
+
+.Comp-inner {
+  max-width: 280px;
+  padding: 6px 24px;
+  margin: 0 auto;
+  background: #e7e7e7;
+  color: #000;
+  border-radius: 6px;
+  box-shadow: 0px 0px 6px 2px #666;
+}
+
+.Comp-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.Comp-close-btn {
+  font-size: 22px;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: whitesmoke;
+  position: absolute;
+  top: 9px;
+  right: 9px;
+}
+
+.Comp-close-btn:hover,
+.Comp-close-btn:active {
+  color: red;
+  cursor: pointer;
+}
+
+.Comp-close-btn:disabled {
+  color: whitesmoke;
+  opacity: 0.2;
+  cursor: not-allowed;
+}
+
+.Comp-text {
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+}
+.Comp-form {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.Comp-label {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.Comp-input {
+  padding: 8px 16px;
+  line-height: 1.1rem;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px 2px #b6b6b6;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.Comp-input[type="password"] {
+  margin-bottom: 18px;
+}
+
+.Comp-button {
+  padding: 6px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.Comp-button-signUp {
+  background-color: #35d932;
+}
+.Comp-button-signUp:hover {
+  opacity: 0.7;
+}
+
+.Comp-button-guest:hover {
+  background-color: #ffa500;
+  opacity: 0.7;
+}
+
+.Comp-signIn {
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.Comp-signInLink {
+  text-decoration: none;
+  color: #35d932;
+}
+.Comp-signInLink:hover {
+  opacity: 0.7;
+}

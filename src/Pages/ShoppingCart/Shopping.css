@@ -13,38 +13,6 @@
   padding: 5px;
 }
 
-/* LIST ITEMS */
-.list_item {
-  background-color: grey;
-  border-radius: 20px;
-  padding: 5px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.list_item > img {
-  border: 1px solid white;
-  border-radius: 20px;
-  margin-right: 10px;
-}
-
-.item_info {
-  margin-right: auto;
-}
-
-.item_increment {
-  color: white;
-  text-align: center;
-}
-
-.item_increment > button {
-  border: white solid 1px;
-  border-radius: 20px;
-  background-color: black;
-  color: white;
-  font-size: 25px;
-}
 
 /* CHECKOUT SECTION */
 .checkout {
@@ -60,4 +28,7 @@
   border-radius: 20px;
   border: none;
   padding: 10px;
+}
+.ImagesProducts {
+  height: 100px;
 }

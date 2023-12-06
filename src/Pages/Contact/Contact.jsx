@@ -1,18 +1,22 @@
 import style from "./Contact.module.css";
+
 export function Contact() {
+  function sendEmail() {
+    window.location.reload();
+  }
   return (
     <>
       <div className={style.contactPagecontainer}>
         <div className={style.headertext}>
           <h1>Contact the creators of DesiDerio</h1>
           <p>
-            We have the <span>worlds best customer service. </span>Subscribe to
-            our premium membership, and we will respond within 5 minutes. Feel
-            free to contact us by filling out the contact form below:
+            We have the <span>worlds best customer service. </span>Subscribe to our premium
+            membership, and we will respond within 5 minutes. Feel free to contact us by filling out
+            the contact form below:
           </p>
         </div>
         <div className={style.contactformcontainer}>
-          <form className={style.contactform}>
+          <form className={style.contactform} onSubmit={sendEmail}>
             <label className={style.formlabel} htmlFor="name">
               Name:
             </label>

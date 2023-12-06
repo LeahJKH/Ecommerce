@@ -8,7 +8,7 @@ export default function ShoppingCart() {
   useEffect(() => {
     const storedCartItems = [];
 
-    for (let i = 1; i <= 2; i++) {
+    for (let i = 1; i <= 20; i++) {
       const items = JSON.parse(localStorage.getItem(i.toString())) || [];
       storedCartItems.push(...items);
     }

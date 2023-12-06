@@ -1,11 +1,28 @@
 import styles from "./Header.module.css";
 import UserMenu from "../Usermenu/UserMenu";
 import Hamburger from "../HamburgerMenu/Hamburger";
-import { useState } from "react";
-
+import { useState, useEffect } from "react";
 
 export function Header() {
+  const [itemsSaved, setItemsSaved] = useState(0);
+
+  useEffect(() => {
+    let totalQuantity = 0;
   
+    for (let i = 0; i < 30; i++) {
+      const cartItems = JSON.parse(localStorage.getItem(i)) || [];
+      totalQuantity += cartItems.reduce((total, item) => total + (item.quantity || 0 - 1), 0);
+    }
+  
+    setItemsSaved(totalQuantity);
+  }, []);
+
+  function LinkHandle() {
+    location.href="/ShoppingCart"
+  } 
+function GoHome() {
+  location.href="/"
+}
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
@@ -26,12 +43,13 @@ export function Header() {
     <>
       <div className={styles.headerContainer}>
         <div className={styles.userCart}>
-          <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} />
-          <img src="../../icons/basket.svg" alt="Shopping cart" />
+          <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} className={styles.cursorClicking} />
+          <img src="../../icons/basket.svg" alt="Shopping cart" onClick={LinkHandle}  className={styles.cursorClicking}/>
+          <p>{itemsSaved}</p>
         </div>
-        <div className={styles.logo}>
-          <h1>DD</h1>
-          <p>DesiDerio</p>
+        <div className={styles.logo} >
+          <h1 onClick={GoHome} className={styles.cursorClicking}>DD</h1>
+          <p className={styles.cursorClicking} onClick={GoHome}>DesiDerio</p>
         </div>
         <div className={styles.searchHam}>
           <img src="../../icons/search.svg" alt="Magnifying glass" />
@@ -39,6 +57,7 @@ export function Header() {
             src="../../../public/icons/Hamburgermenu.svg"
             alt=""
             onClick={toggleShowMoreBurger}
+            className={styles.cursorClicking}
           />
         </div>
       </div>
@@ -47,39 +66,3 @@ export function Header() {
     </>
   );
 }
-/* <ul className={styles.pagesList}>
-          <li>
-            <Link to="/" className="pages">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/user" className="pages">
-              User
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="pages">
-              {" "}
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop" className="pages">
-              {" "}
-              Shop
-            </Link>
-          </li>
-          <li>
-            <Link to="/ShoppingCart" className="pages">
-              {" "}
-              ShoppingCart
-            </Link>
-          </li>
-          <li>
-            <Link to="/Settings" className="pages">
-              {" "}
-              Settings
-            </Link>
-          </li>
-        </ul> */

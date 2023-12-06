@@ -4,6 +4,7 @@
 
 - Stein
   <sub> _CSS Leader_, _Design Leader_ </sub>
+
 - Leah Yoimiya
   <sub> _Team leader_, _Github leader_ </sub>
 - Jesper

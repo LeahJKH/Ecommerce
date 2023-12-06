@@ -4,7 +4,7 @@
   border-radius: 20px;
 }
 .cardProduct {
-  background-color: #888383;
+  background-color: #312d2d;
   border-radius: 20px;
   text-align: center;
   color: white;
@@ -21,6 +21,7 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  object-fit: contain;
 }
 
 .containProduct {
@@ -37,11 +38,13 @@
 }
 .descStyles {
   height: 85px;
-  color: #6016c1;
+  color: #f3ebeb;
   font-weight: 800;
   padding: 10px;
-
   overflow-y: scroll;
+}
+.productBtn:hover {
+  background-color: #390979;
 }
 ::-webkit-scrollbar {
   width: 10px;

@@ -1,39 +1,48 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./Shopping.css";
+import CartCard from "../../Components/CartCard/CartCard";
 
 export default function ShoppingCart() {
-  const [quantity, setQuantity] = useState(1);
+  const [cartItems, setCartItems] = useState([]);
 
-  const handleIncrement = () => {
-    setQuantity(quantity + 1);
-  };
+  useEffect(() => {
+    const storedCartItems = [];
 
-  const handleDecrement = () => {
-    if (quantity > 1) {
-      setQuantity(quantity - 1);
+    for (let i = 1; i <= 20; i++) {
+      const items = JSON.parse(localStorage.getItem(i.toString())) || [];
+      storedCartItems.push(...items);
     }
+
+    const combinedCartItems = storedCartItems.reduce((acc, item) => {
+      const existingItem = acc.find((accItem) => accItem.title === item.title);
+
+      if (existingItem) {
+        existingItem.quantity += item.quantity;
+      } else {
+        acc.push(item);
+      }
+
+      return acc;
+    }, []);
+
+    setCartItems(combinedCartItems);
+  }, []);
+
+  const calculateSubtotal = () => {
+    return cartItems.reduce((total, item) => total + item.price * item.quantity, 0).toFixed(2);
   };
 
   return (
     <div className="shoppingCart">
       <h2>Shopping Cart</h2>
       <div className="shopping_list">
-        <div className="list_item">
-          <img src="../../../public/pictures/boats.png" alt="boat" />
-          <div className="item_info">
-            <p>Item</p>
-            <p>Price</p>
-          </div>
-          <div className="item_increment">
-            <button onClick={handleIncrement}>+</button>
-            <p>{quantity}</p>
-            <button onClick={handleDecrement}>-</button>
-          </div>
-        </div>
+        {cartItems.map((item, index) => (
+          <CartCard key={index} item={item} />
+        ))}
       </div>
       <div className="checkout">
-        <p>Subtotal: $654</p>
-        <button>Procced to checkout</button>
+        <p>Subtotal: ${calculateSubtotal()}</p>
+        <button>Proceed to checkout</button>
       </div>
     </div>
   );

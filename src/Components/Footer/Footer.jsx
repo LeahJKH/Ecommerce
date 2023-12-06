@@ -26,7 +26,7 @@ export function Footer() {
           <img src="../../../public/icons/pinterest.svg" alt="Pinterest" />
         </div>
         <div className={styles.copyright}>
-          <p className={styles.copyright}>2024 Desiderio Copyright</p>
+          <p className={styles.copyright}>&copy;Desiderio 2024 </p>
         </div>
       </div>
     </>

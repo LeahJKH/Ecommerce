@@ -4,6 +4,7 @@
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 .CrossOut {
   text-align: center;
@@ -52,7 +53,12 @@
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .homecat {
+  .Background {
     display: flex;
+  }
+  .WrapCatagories {
+    display: contents;
+    align-items: center;
+    width: 100%;
   }
 }

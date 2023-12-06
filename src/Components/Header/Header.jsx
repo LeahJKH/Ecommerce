@@ -66,39 +66,3 @@ function GoHome() {
     </>
   );
 }
-/* <ul className={styles.pagesList}>
-          <li>
-            <Link to="/" className="pages">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/user" className="pages">
-              User
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="pages">
-              {" "}
-              Contact
-            </Link>
-          </li>
-          <li>
-            <Link to="/shop" className="pages">
-              {" "}
-              Shop
-            </Link>
-          </li>
-          <li>
-            <Link to="/ShoppingCart" className="pages">
-              {" "}
-              ShoppingCart
-            </Link>
-          </li>
-          <li>
-            <Link to="/Settings" className="pages">
-              {" "}
-              Settings
-            </Link>
-          </li>
-        </ul> */

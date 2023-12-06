@@ -13,7 +13,6 @@ export default function ShoppingCart() {
       storedCartItems.push(...items);
     }
 
-   
     const combinedCartItems = storedCartItems.reduce((acc, item) => {
       const existingItem = acc.find((accItem) => accItem.title === item.title);
 

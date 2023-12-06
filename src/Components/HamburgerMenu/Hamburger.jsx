@@ -1,6 +1,7 @@
 import Style from "./Hamburger.module.css";
 import { Link } from "react-router-dom";
 export default function Hamburger({ toggleBurgerMenu }) {
+
   return (
     <>
       <div className={Style.Background}>

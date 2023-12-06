@@ -64,7 +64,7 @@ export function Category() {
   );
 }
 
-// The Shop component remains unchanged and is exported as a named export
+
 export function Shop({ selectedCategory }) {
   const [products, setProducts] = useState([]);
 

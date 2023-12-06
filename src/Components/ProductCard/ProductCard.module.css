@@ -4,10 +4,11 @@
   border-radius: 20px;
 }
 .cardProduct {
-  background-color: #312d2d;
+  font-family: "Poppins", sans-serif;
+  background-color: #0e0d0d;
   border-radius: 20px;
   text-align: center;
-  color: white;
+  color: #f3ebeb;
   border: 2px black solid;
   display: flex;
   flex-direction: column;
@@ -32,7 +33,7 @@
   border: none;
   border-radius: 20px;
   font-size: 20px;
-  color: white;
+  color: #f3ebeb;
   width: 200px;
   height: 50px;
 }
@@ -51,7 +52,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f3ebeb;
 }
 
 ::-webkit-scrollbar-thumb {

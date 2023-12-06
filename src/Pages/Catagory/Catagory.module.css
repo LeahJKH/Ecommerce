@@ -4,31 +4,27 @@
 }
 
 .categoryContainer {
-  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: start;
-  flex-wrap: wrap;
+  flex-flow: wrap;
+  justify-content: center;
 }
 
 .categoryCard {
+  color: #f3ebeb;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
-  height: 15rem;
-  width: 10rem;
-  margin: 0.5rem;
+  height: 30vh;
+  margin: 1.5rem;
   padding: 0.5rem;
   border-radius: 15px;
-  background-color: #888383;
+  background-color: #0e0d0d;
   border: 2px black solid;
   box-shadow: 1px 1px 1px rgba(18, 17, 17, 0.3);
 }
 
 .cardImage {
   width: 100%;
-  height: auto;
+  object-fit: cover;
   border-radius: 15px;
 }

@@ -4,7 +4,8 @@
   border-radius: 20px;
 }
 .cardProduct {
-  background-color: #312d2d;
+  font-family: "Poppins", sans-serif;
+  background-color: #0e0d0d;
   border-radius: 20px;
   text-align: center;
   color: #f3ebeb;

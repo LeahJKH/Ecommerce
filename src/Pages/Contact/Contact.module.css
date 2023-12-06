@@ -52,15 +52,14 @@
   }
 
   .contactPagecontainer {
-    color: #0e0d0d;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-color: #f3ebeb;
+    background-color: #0e0d0d;
     padding: 30px;
-    color: #0e0d0d;
+    color: #f3ebeb;
   }
   .contactPagecontainer span {
     font-weight: bold;

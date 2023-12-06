@@ -9,7 +9,7 @@ export function ProductCard({ product }) {
     if (existingProductIndex !== -1) {
       existingCartItems[existingProductIndex].quantity += 1;
     } else {
-      existingCartItems.push({ title: product.title, price: product.price, quantity: 1 });
+      existingCartItems.push({ title: product.title, price: product.price, quantity: 1, image: product.image });
     }
     localStorage.setItem(product.id, JSON.stringify(existingCartItems));
   }

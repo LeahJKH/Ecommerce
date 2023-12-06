@@ -2,10 +2,15 @@ import styles from "./Header.module.css";
 import UserMenu from "../Usermenu/UserMenu";
 import Hamburger from "../HamburgerMenu/Hamburger";
 import { useState } from "react";
-
+import { Link } from "react-router-dom";
 
 export function Header() {
-  
+  function LinkHandle() {
+    location.href="/ShoppingCart"
+  } 
+function GoHome() {
+  location.href="/"
+}
   const [showUserMenu, setShowUserMenu] = useState(false);
   const [showBurgerMenu, setShowBurgerMenu] = useState(false);
 
@@ -26,12 +31,12 @@ export function Header() {
     <>
       <div className={styles.headerContainer}>
         <div className={styles.userCart}>
-          <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} />
-          <img src="../../icons/basket.svg" alt="Shopping cart" />
+          <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} className={styles.cursorClicking} />
+          <img src="../../icons/basket.svg" alt="Shopping cart" onClick={LinkHandle} className={styles.cursorClicking}/>
         </div>
-        <div className={styles.logo}>
-          <h1>DD</h1>
-          <p>DesiDerio</p>
+        <div className={styles.logo} >
+          <h1 onClick={GoHome} className={styles.cursorClicking}>DD</h1>
+          <p className={styles.cursorClicking} onClick={GoHome}>DesiDerio</p>
         </div>
         <div className={styles.searchHam}>
           <img src="../../icons/search.svg" alt="Magnifying glass" />
@@ -39,6 +44,7 @@ export function Header() {
             src="../../../public/icons/Hamburgermenu.svg"
             alt=""
             onClick={toggleShowMoreBurger}
+            className={styles.cursorClicking}
           />
         </div>
       </div>

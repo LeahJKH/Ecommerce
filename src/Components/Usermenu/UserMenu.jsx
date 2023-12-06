@@ -13,7 +13,9 @@ export default function UserMenu({ toggleUserMenu }) {
         />
         <div className={Style.Flexify2}>
           <h2>Name</h2>
-          <p>View profile</p>
+          <p>
+            <span>View profile</span>
+          </p>
         </div>
       </div>
       <div className={Style.Flexify3}>
@@ -22,7 +24,9 @@ export default function UserMenu({ toggleUserMenu }) {
           alt=""
           className={Style.MenuImg}
         />
-        <h3>Settings</h3>
+        <h3>
+          <span>Settings</span>
+        </h3>
       </div>
       <div className={Style.Flexify4}>
         <img
@@ -30,7 +34,9 @@ export default function UserMenu({ toggleUserMenu }) {
           alt=""
           className={Style.MenuImg}
         />
-        <h3>Log out</h3>
+        <h3>
+          <span>Log out</span>
+        </h3>
       </div>
       <p></p>
     </div>

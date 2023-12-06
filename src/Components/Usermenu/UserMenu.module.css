@@ -4,6 +4,7 @@
 }
 .MenuImg {
   width: 40px;
+  margin: 5px;
 }
 .Flexify {
   display: flex;
@@ -11,6 +12,8 @@
   background-color: #f3ebeb;
   text-align: start;
   border-bottom: 1px solid #0e0d0d;
+  gap: 5px;
+  justify-content: center;
 }
 .Flexify > h3,
 h2 {
@@ -20,10 +23,22 @@ h2 {
   display: flex;
   padding-bottom: 10px;
   justify-content: center;
-  gap: 5px;
+}
+
+.Flexify2 span:hover {
+  cursor: pointer;
+  color: rgb(26, 194, 26);
+}
+.Flexify3:hover {
+  cursor: pointer;
+  color: rgb(26, 194, 26);
+}
+.Flexify4:hover {
+  cursor: pointer;
+  color: rgb(26, 194, 26);
 }
 .UserImg {
-  width: 60px;
+  width: 55px;
 }
 @media screen and (min-width: 768px) {
   .Flexify {

@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
-import Styles from "./catagory.module.css";
-import Style from "./Shop.module.css";
+import "./Catagory.css";
+
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
 const categories = [
+<<<<<<< HEAD
   { name: "Boats", image: "../../../public/pictures/boats.png" },
   { name: "Cars", image: "../../../public/pictures/cars.png" },
   { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
@@ -11,6 +12,15 @@ const categories = [
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "jewelery", image: "../../../public/pictures/jewelry.png" },
   { name: "Family", image: "../../../public/pictures/Family.jpg" },
+=======
+  { name: "Boats", image: "./pictures/boats.png" },
+  { name: "Cars", image: "./pictures/cars.png" },
+  { name: "men's clothing", image: "./pictures/clothes.png" },
+  { name: "Houses", image: "./pictures/houses.png" },
+  { name: "Companies", image: "./pictures/companies.png" },
+  { name: "Jewelry", image: "./pictures/jewelry.png" },
+  { name: "Family", image: "./pictures/Family.jpg" },
+>>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
 ];
 
 export function Category() {
@@ -40,11 +50,12 @@ export function Category() {
   }
 
   return (
-    <div className={Styles.category}>
-      <div className={Style.categoryH2}>
+    <div className="category">
+      <div className="categoryH2">
         <h2>Category Page</h2>
       </div>
       {showShop ? (
+<<<<<<< HEAD
         <div>
           <button onClick={returnPage} className={Style.btnReturn}>
             Return
@@ -62,17 +73,33 @@ export function Category() {
                   <ProductCard key={index} product={product} />
                 ))}
             </div>
+=======
+       <div>
+       <button onClick={returnPage} className="btnReturn">RETURN</button>
+       <div className="centering">
+        <div className="cardFlex">
+            {products
+              .filter(
+                (product) =>
+                  !selectedCategory ||
+                  product.category.toLowerCase() ===
+                    selectedCategory.toLowerCase()
+              )
+              .map((product, index) => (
+                <ProductCard key={index} product={product} />
+              ))}
+>>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
           </div>
         </div>
       ) : (
-        <div className={Styles.categoryContainer}>
+        <div className="categoryContainer">
           {categories.map((category, index) => (
-            <div key={index} className={Styles.categoryCard}>
+            <div key={index} className="categoryCard">
               <h3 onClick={() => handleCategoryChange(category.name)}>
                 {category.name}
               </h3>
               <img
-                className={Styles.cardImage}
+                className="cardImage"
                 src={category.image}
                 alt={category.name}
               />

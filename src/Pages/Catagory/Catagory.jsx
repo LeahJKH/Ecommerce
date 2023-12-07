@@ -1,7 +1,7 @@
 
 import { useState, useEffect } from "react";
 import Styles from "./catagory.module.css";
-import Style from "./Shop.module.css";
+
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
 
@@ -37,8 +37,8 @@ export function Category() {
     <div className={Styles.category}>
       <h2>Category Page</h2>
       {showShop ? (
-        <div className={Style.centering}>
-          <div className={Style.cardFlex}>
+        <div className={Styles.centering}>
+          <div className={Styles.cardFlex}>
             {products
               .filter(
                 (product) =>
@@ -87,8 +87,8 @@ export function Shop({ selectedCategory }) {
   }, [selectedCategory]);
 
   return (
-    <div className={Style.centering}>
-      <div className={Style.cardFlex}>
+    <div className={Styles.centering}>
+      <div className={Styles.cardFlex}>
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
         ))}

@@ -6,7 +6,7 @@ import { ProductCard } from "../../Components/ProductCard/ProductCard";
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },
   { name: "Cars", image: "../../../public/pictures/cars.png" },
-  { name: "Clothing", image: "../../../public/pictures/clothes.png" },
+  { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
@@ -42,7 +42,9 @@ export function Category() {
 
   return (
     <div className={Styles.category}>
-      <h2>Category Page</h2>
+      <div className={Style.categoryH2}>
+        <h2>Category Page</h2>
+      </div>
       {showShop ? (
         <div>
          <button onClick={returnPage} className={Style.btnReturn}>RETURN</button>
@@ -80,4 +82,3 @@ export function Category() {
     </div>
   );
 }
-

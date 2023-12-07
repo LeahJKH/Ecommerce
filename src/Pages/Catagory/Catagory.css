@@ -35,14 +35,6 @@
   border-radius: 12px;
 }
 
-@media (min-width: 768px) {
-  .categoryCard:hover {
-    transform: scale(1.1);
-    transition: ease-in-out 0.5s;
-    cursor: pointer;
-  }
-}
-
 /*shop stuff*/
 .centering {
   width: 100%;
@@ -59,6 +51,23 @@
   border-radius: 20px;
   font-size: 20px;
   color: #f3ebeb;
-  width: 200px;
-  height: 50px;
+  padding: 8px 10px 8px 10px;
+}
+@media (min-width: 768px) {
+  .categoryCard:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+  }
+  .btnReturn {
+    background-color: #6016c1;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: #f3ebeb;
+    padding: 8px 10px 8px 10px;
+  }
+  .btnReturn:hover {
+    background-color: #390979;
+  }
 }

@@ -55,9 +55,9 @@ function GoHome() {
           <p className={styles.cursorClicking} onClick={GoHome}>DesiDerio</p>
         </div>
         <div className={styles.searchHam}>
-          <img src="../../icons/search.svg" alt="Magnifying glass" />
+          <img src="./icons/search.svg" alt="Magnifying glass" />
           <img
-            src="../../../public/icons/Hamburgermenu.svg"
+            src="./public/icons/Hamburgermenu.svg"
             alt=""
             onClick={toggleShowMoreBurger}
             className={styles.cursorClicking}

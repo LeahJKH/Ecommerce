@@ -1,6 +1,6 @@
 import styles from "./Header.module.css";
-import UserMenu from "../Usermenu/UserMenu";
-import Hamburger from "../HamburgerMenu/Hamburger";
+import UserMenu from "./Usermenu/UserMenu";
+import Hamburger from "./HamburgerMenu/Hamburger";
 import { useState, useEffect } from "react";
 
 export function Header() {
@@ -57,7 +57,7 @@ function GoHome() {
         <div className={styles.searchHam}>
           <img src="./icons/search.svg" alt="Magnifying glass" />
           <img
-            src="./public/icons/Hamburgermenu.svg"
+            src="./icons/Hamburgermenu.svg"
             alt=""
             onClick={toggleShowMoreBurger}
             className={styles.cursorClicking}

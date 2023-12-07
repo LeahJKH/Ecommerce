@@ -66,6 +66,7 @@
     color: #f3ebeb;
     font-size: 18px;
     margin: 20px 10px 20px 10px;
+    border-radius: 12px;
   }
   .contactPagecontainer span {
     font-weight: bold;

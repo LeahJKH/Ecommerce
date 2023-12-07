@@ -10,9 +10,14 @@ const categories = [
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
+  { name: "Family", image: "../../../public/pictures/Family.jpg" },
 ];
 
+
 export function Category() {
+  function returnPage() {
+    location.reload()
+  }
   const [selectedCategory, setSelectedCategory] = useState(() => {
     return localStorage.getItem("selectedCategory") || "";
   });
@@ -21,7 +26,7 @@ export function Category() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "https://fakestoreapi.com/products";
+    const apiUrl = "http://localhost:49999/products"; //if you dont have our local host you cant see the cart in action
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -39,6 +44,8 @@ export function Category() {
     <div className={Styles.category}>
       <h2>Category Page</h2>
       {showShop ? (
+        <div>
+         <button onClick={returnPage} className={Style.btnReturn}>RETURN</button>
         <div className={Style.centering}>
           <div className={Style.cardFlex}>
             {products
@@ -52,6 +59,7 @@ export function Category() {
                 <ProductCard key={index} product={product} />
               ))}
           </div>
+        </div>
         </div>
       ) : (
         <div className={Styles.categoryContainer}>
@@ -73,37 +81,3 @@ export function Category() {
   );
 }
 
-export function Shop() {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const selectedCategory = localStorage.getItem("selectedCategory") || "";
-    const apiUrl = "https://fakestoreapi.com/products";
-
-    fetch(apiUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        const filteredProducts = selectedCategory
-          ? data.filter(
-              (product) =>
-                product.category.toLowerCase() ===
-                selectedCategory.toLowerCase()
-            )
-          : data;
-        setProducts(filteredProducts);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, []);
-
-  return (
-    <div className={Style.centering}>
-      <div className={Style.cardFlex}>
-        {products.map((product, index) => (
-          <ProductCard key={index} product={product} />
-        ))}
-      </div>
-    </div>
-  );
-}

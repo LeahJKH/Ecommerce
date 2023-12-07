@@ -24,7 +24,8 @@
 }
 
 .cardImage {
-  width: 100%;
+  width: 100px;
+  height: 190px;
   object-fit: cover;
   border-radius: 15px;
 }

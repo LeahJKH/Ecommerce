@@ -6,16 +6,19 @@ import { useState, useEffect } from "react";
 export function Header() {
   const [itemsSaved, setItemsSaved] = useState(0);
 
-  useEffect(() => {
-    let totalQuantity = 0;
-  
-    for (let i = 0; i < 30; i++) {
-      const cartItems = JSON.parse(localStorage.getItem(i)) || [];
-      totalQuantity += cartItems.reduce((total, item) => total + (item.quantity || 0 - 1), 0);
+ useEffect(() => {
+  let totalQuantity = 0;
+
+  for (let i = 0; i < 30; i++) {
+    const cartItems = JSON.parse(localStorage.getItem(i)) || [];
+    
+    if (Array.isArray(cartItems)) {
+      totalQuantity += cartItems.reduce((total, item) => total + (item.quantity || 0), 0);
     }
-  
-    setItemsSaved(totalQuantity);
-  }, []);
+  }
+
+  setItemsSaved(totalQuantity);
+}, []);
 
   function LinkHandle() {
     location.href="/ShoppingCart"

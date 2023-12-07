@@ -1,3 +1,4 @@
+/* Styling for user-dropdownmenu */
 .CrossOut {
   text-align: end;
   margin: 20px;
@@ -8,7 +9,6 @@
 }
 .Flexify {
   margin-top: 20px;
-  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   background-color: #f3ebeb;
@@ -31,6 +31,7 @@ h2 {
 .UserImg {
   width: 55px;
 }
+/* Responsive design adjustments for larger screens  */
 @media screen and (min-width: 768px) {
   .Flexify {
     display: flex;

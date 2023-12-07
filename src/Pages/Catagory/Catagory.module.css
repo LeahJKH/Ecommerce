@@ -1,6 +1,6 @@
+/* Styling for "Categories-page */
 .category {
   text-align: center;
-  font-family: "Source Code Pro", monospace;
 }
 
 .categoryContainer {
@@ -10,21 +10,33 @@
 }
 
 .categoryCard {
+  transition: all 500ms;
   color: #f3ebeb;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 30vh;
+  height: 40vh;
+  width: 20vh;
   margin: 1.5rem;
   padding: 0.5rem;
   border-radius: 15px;
-  background-color: #0e0d0d;
+  background-color: #4a0644;
   border: 2px black solid;
   box-shadow: 1px 1px 1px rgba(18, 17, 17, 0.3);
 }
 
 .cardImage {
-  width: 100%;
+  width: 100px;
+  height: 190px;
   object-fit: cover;
   border-radius: 15px;
+}
+
+/* Responsive design adjustments for larger screens  */
+@media (min-width: 768px) {
+  .categoryCard:hover {
+    transform: scale(1.1);
+    transition: ease-in-out 0.5s;
+    cursor: pointer;
+  }
 }

@@ -7,3 +7,12 @@
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+.btnReturn {
+  background-color: #6016c1;
+  border: none;
+  border-radius: 20px;
+  font-size: 20px;
+  color: #f3ebeb;
+  width: 200px;
+  height: 50px;
+}

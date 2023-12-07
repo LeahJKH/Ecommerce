@@ -1,6 +1,4 @@
-/* CSS for mobile to 768px */
 .headerContainer {
-  font-family: "Poppins", sans-serif;
   padding: 15px;
   background: #0e0d0d;
   display: flex;
@@ -20,6 +18,7 @@
 }
 .userCart {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .searchHam {
@@ -43,5 +42,5 @@
 @media (min-width: 768px) {
 }
 .cursorClicking {
-cursor:pointer ;
+  cursor: pointer;
 }

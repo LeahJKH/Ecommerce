@@ -4,6 +4,11 @@ import CartCard from "../../Components/CartCard/CartCard";
 
 export default function ShoppingCart() {
   const [cartItems, setCartItems] = useState([]);
+  function BuyStuff() {
+    localStorage.clear()
+    Location.reload()
+  }
+  
 
   useEffect(() => {
     const storedCartItems = [];
@@ -42,7 +47,7 @@ export default function ShoppingCart() {
       </div>
       <div className="checkout">
         <p>Subtotal: ${calculateSubtotal()}</p>
-        <button>Proceed to checkout</button>
+        <button onClick={BuyStuff}>Proceed to checkout</button>
       </div>
     </div>
   );

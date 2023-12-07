@@ -10,7 +10,7 @@ const categories = [
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
-  { name: "Family", image: "../../../public/pictures/jewelry.png" },
+  { name: "Family", image: "../../../public/pictures/Family.webp" },
 ];
 
 
@@ -26,7 +26,7 @@ export function Category() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "http://localhost:49999/products";
+    const apiUrl = "http://localhost:49999/products"; //if you dont have our local host you cant see the cart in action
 
     fetch(apiUrl)
       .then((res) => res.json())

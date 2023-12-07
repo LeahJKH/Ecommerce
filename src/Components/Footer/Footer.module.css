@@ -30,7 +30,7 @@
   }
   .newsletter button {
     height: 100%;
-    background-color: #6016c1;
+    background-color: #6a0862;
     color: #f3ebeb;
     border-radius: 0 15px 15px 0;
     padding: 8px;
@@ -100,7 +100,7 @@
   .newsletter button {
     display: flex;
     justify-content: center;
-    background-color: #4a0644;
+    background-color: #6a0862;
     color: #f3ebeb;
     border-radius: 0 15px 15px 0;
     padding: 8px;
@@ -108,7 +108,7 @@
     transform: translateX(-15%);
   }
   .newsletter button:hover {
-    background-color: #6a0862;
+    background-color: #4a0644;
   }
   .custMembership {
     font-size: 20px;

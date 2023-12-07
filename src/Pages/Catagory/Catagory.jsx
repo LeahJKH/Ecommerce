@@ -9,14 +9,13 @@ const categories = [
   { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
-  { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
+  { name: "jewelery", image: "../../../public/pictures/jewelry.png" },
   { name: "Family", image: "../../../public/pictures/Family.jpg" },
 ];
 
-
 export function Category() {
   function returnPage() {
-    location.reload()
+    location.reload();
   }
   const [selectedCategory, setSelectedCategory] = useState(() => {
     return localStorage.getItem("selectedCategory") || "";
@@ -26,7 +25,7 @@ export function Category() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "http://localhost:49999/products"; //if you dont have our local host you cant see the cart in action
+    const apiUrl = "https://fakestoreapi.com/products"; //if you dont have our local host you cant see the cart in action
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -47,21 +46,23 @@ export function Category() {
       </div>
       {showShop ? (
         <div>
-         <button onClick={returnPage} className={Style.btnReturn}>RETURN</button>
-        <div className={Style.centering}>
-          <div className={Style.cardFlex}>
-            {products
-              .filter(
-                (product) =>
-                  !selectedCategory ||
-                  product.category.toLowerCase() ===
-                    selectedCategory.toLowerCase()
-              )
-              .map((product, index) => (
-                <ProductCard key={index} product={product} />
-              ))}
+          <button onClick={returnPage} className={Style.btnReturn}>
+            Return
+          </button>
+          <div className={Style.centering}>
+            <div className={Style.cardFlex}>
+              {products
+                .filter(
+                  (product) =>
+                    !selectedCategory ||
+                    product.category.toLowerCase() ===
+                      selectedCategory.toLowerCase()
+                )
+                .map((product, index) => (
+                  <ProductCard key={index} product={product} />
+                ))}
+            </div>
           </div>
-        </div>
         </div>
       ) : (
         <div className={Styles.categoryContainer}>

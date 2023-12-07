@@ -5,12 +5,13 @@
 }
 .cardProduct {
   background-color: #4a0644;
-  border-radius: 20px;
+  border-radius: 12px;
   text-align: center;
   color: #f3ebeb;
   border: 2px black solid;
   display: flex;
   flex-direction: column;
+
   margin: 10px;
   height: 640px;
 }
@@ -18,10 +19,10 @@
   font-weight: 800;
 }
 .CardContent > img {
-  flex-grow: 1;
+  margin-top: 15px;
+
   display: flex;
   flex-direction: column;
-  object-fit: contain;
 }
 
 .containProduct {

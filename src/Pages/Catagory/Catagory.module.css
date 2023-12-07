@@ -15,11 +15,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 40vh;
+  height: 30vh;
   width: 20vh;
   margin: 1.5rem;
   padding: 0.5rem;
-  border-radius: 15px;
+  border-radius: 12px;
   background-color: #4a0644;
   border: 2px black solid;
   box-shadow: 1px 1px 1px rgba(18, 17, 17, 0.3);
@@ -28,7 +28,7 @@
 .cardImage {
   width: 100px;
   height: 190px;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 15px;
 }
 

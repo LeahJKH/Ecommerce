@@ -1,14 +1,22 @@
+/* Styling for user-dropdownmenu */
 .CrossOut {
-  color: red;
   text-align: end;
   margin: 20px;
 }
 .MenuImg {
   width: 40px;
+  margin: 5px;
 }
 .Flexify {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
+  background-color: #f3ebeb;
+  text-align: start;
+  border-bottom: 1px solid #0e0d0d;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
 }
 .Flexify > h3,
 h2 {
@@ -16,8 +24,35 @@ h2 {
 }
 .Flexify > div {
   display: flex;
-  flex-direction: row;
+  padding-bottom: 10px;
+  justify-content: center;
 }
+
 .UserImg {
-  width: 60px;
+  width: 55px;
+}
+/* Responsive design adjustments for larger screens  */
+@media screen and (min-width: 768px) {
+  .Flexify {
+    display: flex;
+    font-size: 20px;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .Flexify2 {
+    margin: 10px;
+  }
+  .Flexify2 span:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
+  }
+  .Flexify3:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
+  }
+  .Flexify4:hover {
+    cursor: pointer;
+    color: rgb(26, 194, 26);
+  }
 }

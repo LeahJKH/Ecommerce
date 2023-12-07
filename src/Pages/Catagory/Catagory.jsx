@@ -1,9 +1,7 @@
-
 import { useState, useEffect } from "react";
 import Styles from "./catagory.module.css";
 
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
-
 
 const categories = [
   { name: "Boats", image: "../../../public/pictures/boats.png" },
@@ -12,15 +10,23 @@ const categories = [
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
+  { name: "Family", image: "../../../public/pictures/Family.jpg" },
 ];
 
+
 export function Category() {
-  const [selectedCategory, setSelectedCategory] = useState("");
+  function returnPage() {
+    location.reload()
+  }
+  const [selectedCategory, setSelectedCategory] = useState(() => {
+    return localStorage.getItem("selectedCategory") || "";
+  });
+
   const [showShop, setShowShop] = useState(false);
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "https://fakestoreapi.com/products";
+    const apiUrl = "http://localhost:49999/products"; //if you dont have our local host you cant see the cart in action
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -31,68 +37,48 @@ export function Category() {
   function handleCategoryChange(categoryName) {
     setSelectedCategory(categoryName);
     setShowShop(true);
+    localStorage.setItem("selectedCategory", categoryName);
   }
 
   return (
     <div className={Styles.category}>
-      <h2>Category Page</h2>
+      <div className={Styles.categoryH2}>
+        <h2>Category Page</h2>
+      </div>
       {showShop ? (
-        <div className={Styles.centering}>
-          <div className={Styles.cardFlex}>
+       <div>
+       <button onClick={returnPage} className={Styles.btnReturn}>RETURN</button>
+       <div className={Styles.centering}>
+        <div className={Styles.cardFlex}>
             {products
               .filter(
                 (product) =>
                   !selectedCategory ||
-                  product.category.toLowerCase() === selectedCategory.toLowerCase()
+                  product.category.toLowerCase() ===
+                    selectedCategory.toLowerCase()
               )
               .map((product, index) => (
                 <ProductCard key={index} product={product} />
               ))}
           </div>
         </div>
+        </div>
       ) : (
         <div className={Styles.categoryContainer}>
           {categories.map((category, index) => (
             <div key={index} className={Styles.categoryCard}>
-              <h3 onClick={() => handleCategoryChange(category.name)}>{category.name}</h3>
-              <img className={Styles.cardImage} src={category.image} alt={category.name} />
+              <h3 onClick={() => handleCategoryChange(category.name)}>
+                {category.name}
+              </h3>
+              <img
+                className={Styles.cardImage}
+                src={category.image}
+                alt={category.name}
+              />
             </div>
           ))}
         </div>
       )}
-    </div>
-  );
-}
-
-// The Shop component remains unchanged and is exported as a named export
-export function Shop({ selectedCategory }) {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    const apiUrl = "https://fakestoreapi.com/products";
-
-    fetch(apiUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        const filteredProducts = selectedCategory
-          ? data.filter(
-              (product) => product.category.toLowerCase() === selectedCategory.toLowerCase()
-            )
-          : data;
-        setProducts(filteredProducts);
-      })
-      .catch((error) => {
-        console.error("Error fetching data:", error);
-      });
-  }, [selectedCategory]);
-
-  return (
-    <div className={Styles.centering}>
-      <div className={Styles.cardFlex}>
-        {products.map((product, index) => (
-          <ProductCard key={index} product={product} />
-        ))}
-      </div>
     </div>
   );
 }

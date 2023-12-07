@@ -1,17 +1,17 @@
+/* Styling for "About-page*/
 .aboutcontainer {
   background-color: #f3ebeb;
   color: #0e0d0d;
   text-align: start;
-  font-family: "Poppins", sans-serif;
   margin: 5px 10px;
 }
 
 .section {
+  border-radius: 12px;
   color: #f3ebeb;
-  max-width: 800px;
   margin: 20px auto;
   padding: 20px;
-  background-color: #0e0d0d;
+  background-color: #4a0644;
   box-shadow: 0 0 10px rgba(196, 15, 15, 0.1);
 }
 .section h1 {
@@ -30,11 +30,14 @@
   border-bottom: 1px solid #f3ebeb;
 }
 
+/* Responsive design adjustments for larger screens */
 @media screen and (min-width: 768px) {
   .aboutcontainer {
     font-size: 18px;
   }
   .section {
     padding: 30px;
+    max-width: 50%;
+    background-color: #4a0644;
   }
 }

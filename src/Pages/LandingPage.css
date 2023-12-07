@@ -67,13 +67,7 @@
 }
 
 /* Category Section */
-.categories {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  height: 200px;
-  width: 90%;
-}
+
 
 .catergory-card {
   display: flex;

@@ -35,6 +35,16 @@ export function LandingPage() {
     setCurrentSlideIndex += 1;
   }
 
+  const categories = [
+    { name: "Boats", image: "./pictures/boats.png" },
+    { name: "Cars", image: "./pictures/cars.png" },
+    { name: "men's clothing", image: "./pictures/clothes.png" },
+    { name: "Houses", image: "./pictures/houses.png" },
+    { name: "Companies", image: "./pictures/companies.png" },
+    { name: "Jewelry", image: "./pictures/jewelry.png" },
+    { name: "Family", image: "./pictures/Family.jpg" },
+  ];
+
 
   return (
     <>
@@ -42,17 +52,12 @@ export function LandingPage() {
         <h1 className="main--title">Popular Items</h1>
         <div className="carousel">
           <button
-            
             onClick={handlePreviousClick}
             className="carousel-button prev"
           >
             &#8656;
           </button>
-          <button
-            
-            onClick={handleNextClick}
-            className="carousel-button next"
-          >
+          <button onClick={handleNextClick} className="carousel-button next">
             &#8658;
           </button>
           <ul>
@@ -75,12 +80,22 @@ export function LandingPage() {
         </div>
 
         <h1>Categories</h1>
-        <div className="categories">
-          <div className="catergory-card">
-            <h3>Category name</h3>
-            <img src={boat} alt="picture" />
+        
+          <div className="categoryContainer">
+            {categories.map((category, index) => (
+              <div key={index} className="categoryCard">
+                <h3 onClick={() => handleCategoryChange(category.name)}>
+                  {category.name}
+                </h3>
+                <img
+                  className="cardImage"
+                  src={category.image}
+                  alt={category.name}
+                />
+              </div>
+            ))}
           </div>
-        </div>
+        
         <h1>Recommended for you</h1>
         <div className="list-recommended">
           <img src={boat} alt="picture" />

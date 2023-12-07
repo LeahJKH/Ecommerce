@@ -47,7 +47,7 @@ function GoHome() {
       <div className={styles.headerContainer}>
         <div className={styles.userCart}>
           <img src="./icons/person.svg" alt="User Icon" onClick={toggleShowMoreUser} className={styles.cursorClicking} />
-          <img src="../../icons/basket.svg" alt="Shopping cart" onClick={LinkHandle}  className={styles.cursorClicking}/>
+          <img src="./icons/basket.svg" alt="Shopping cart" onClick={LinkHandle}  className={styles.cursorClicking}/>
           <p>{itemsSaved}</p>
         </div>
         <div className={styles.logo} >

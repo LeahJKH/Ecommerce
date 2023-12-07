@@ -4,13 +4,13 @@ import "./Catagory.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
 const categories = [
-  { name: "Boats", image: "../../../public/pictures/boats.png" },
-  { name: "Cars", image: "../../../public/pictures/cars.png" },
-  { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
-  { name: "Houses", image: "../../../public/pictures/houses.png" },
-  { name: "Companies", image: "../../../public/pictures/companies.png" },
-  { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
-  { name: "Family", image: "../../../public/pictures/Family.jpg" },
+  { name: "Boats", image: "./pictures/boats.png" },
+  { name: "Cars", image: "./pictures/cars.png" },
+  { name: "men's clothing", image: "./pictures/clothes.png" },
+  { name: "Houses", image: "./pictures/houses.png" },
+  { name: "Companies", image: "./pictures/companies.png" },
+  { name: "Jewelry", image: "./pictures/jewelry.png" },
+  { name: "Family", image: "./pictures/Family.jpg" },
 ];
 
 

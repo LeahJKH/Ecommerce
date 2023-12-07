@@ -20,6 +20,7 @@
 }
 .userCart {
   display: flex;
+  align-items: center;
   gap: 10px;
 }
 .searchHam {
@@ -43,5 +44,5 @@
 @media (min-width: 768px) {
 }
 .cursorClicking {
-cursor:pointer ;
+  cursor: pointer;
 }

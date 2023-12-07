@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Styles from "/catagory.module.css";
+import Styles from "./catagory.module.css";
 
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 

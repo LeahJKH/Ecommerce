@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import Styles from "./catagory.module.css";
+import "./Catagory.css";
 
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
@@ -41,15 +41,15 @@ export function Category() {
   }
 
   return (
-    <div className={Styles.category}>
-      <div className={Styles.categoryH2}>
+    <div className="category">
+      <div className="categoryH2">
         <h2>Category Page</h2>
       </div>
       {showShop ? (
        <div>
-       <button onClick={returnPage} className={Styles.btnReturn}>RETURN</button>
-       <div className={Styles.centering}>
-        <div className={Styles.cardFlex}>
+       <button onClick={returnPage} className="btnReturn">RETURN</button>
+       <div className="centering">
+        <div className="cardFlex">
             {products
               .filter(
                 (product) =>
@@ -64,14 +64,14 @@ export function Category() {
         </div>
         </div>
       ) : (
-        <div className={Styles.categoryContainer}>
+        <div className="categoryContainer">
           {categories.map((category, index) => (
-            <div key={index} className={Styles.categoryCard}>
+            <div key={index} className="categoryCard">
               <h3 onClick={() => handleCategoryChange(category.name)}>
                 {category.name}
               </h3>
               <img
-                className={Styles.cardImage}
+                className="cardImage"
                 src={category.image}
                 alt={category.name}
               />

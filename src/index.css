@@ -3,7 +3,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #f3ebeb;
-
   /*main container skal dekke rest plass*/
   min-height: 100%;
+  font-family: "Poppins", sans-serif;
 }

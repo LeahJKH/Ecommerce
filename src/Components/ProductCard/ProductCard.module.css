@@ -4,10 +4,10 @@
   border-radius: 20px;
 }
 .cardProduct {
-  background-color: #888383;
+  background-color: #4a0644;
   border-radius: 20px;
   text-align: center;
-  color: white;
+  color: #f3ebeb;
   border: 2px black solid;
   display: flex;
   flex-direction: column;
@@ -21,6 +21,7 @@
   flex-grow: 1;
   display: flex;
   flex-direction: column;
+  object-fit: contain;
 }
 
 .containProduct {
@@ -31,24 +32,28 @@
   border: none;
   border-radius: 20px;
   font-size: 20px;
-  color: white;
+  color: #f3ebeb;
   width: 200px;
   height: 50px;
 }
 .descStyles {
   height: 85px;
-  color: #6016c1;
+  color: #f3ebeb;
   font-weight: 800;
-  padding: 10px;
-
+  padding: 0px 10px 0px 15px;
   overflow-y: scroll;
 }
+.productBtn:hover {
+  background-color: #390979;
+}
+
+/* Styling for scrollbar on item description */
 ::-webkit-scrollbar {
   width: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: #f3ebeb;
 }
 
 ::-webkit-scrollbar-thumb {

@@ -1,9 +1,10 @@
+/* Styling for hamburger dropdown */
 .Background {
   background-color: #f3ebeb;
-  font-family: "Poppins", sans-serif;
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  border-bottom: 1px solid black;
 }
 .CrossOut {
   text-align: center;
@@ -43,7 +44,6 @@
 .MenuImg {
   width: 40px;
 }
-
 .logoutxicon {
   padding-left: 30px;
   display: flex;
@@ -53,9 +53,12 @@
   margin-bottom: 10px;
 }
 @media (min-width: 768px) {
-  .homecat {
+  .Background {
     display: flex;
   }
   .WrapCatagories {
+    display: contents;
+    align-items: center;
+    width: 100%;
   }
 }

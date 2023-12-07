@@ -10,7 +10,7 @@ const categories = [
   { name: "Houses", image: "../../../public/pictures/houses.png" },
   { name: "Companies", image: "../../../public/pictures/companies.png" },
   { name: "Jewelry", image: "../../../public/pictures/jewelry.png" },
-  { name: "Family", image: "../../../public/pictures/Family.webp" },
+  { name: "Family", image: "../../../public/pictures/Family.jpg" },
 ];
 
 

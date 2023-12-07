@@ -1,9 +1,9 @@
+/* Styling for "contact-page". */
 @media (max-width: 768px) {
   .contactPagecontainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: "Poppins", sans-serif;
     text-align: center;
     background-color: #4a0644;
     padding: 30px;
@@ -48,6 +48,7 @@
     cursor: pointer;
   }
 }
+/* Responsive design adjustments for larger screens  */
 @media (min-width: 768px) {
   .headertext {
     width: 500px;

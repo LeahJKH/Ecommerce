@@ -1,8 +1,8 @@
+/* Styling for "About-page*/
 .aboutcontainer {
   background-color: #f3ebeb;
   color: #0e0d0d;
   text-align: start;
-  font-family: "Poppins", sans-serif;
   margin: 5px 10px;
 }
 
@@ -30,6 +30,7 @@
   border-bottom: 1px solid #f3ebeb;
 }
 
+/* Responsive design adjustments for larger screens */
 @media screen and (min-width: 768px) {
   .aboutcontainer {
     font-size: 18px;

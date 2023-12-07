@@ -1,7 +1,6 @@
-/* Styling mobile first */
+/* Styling for the footer mobile first */
 @media (max-width: 768px) {
   .footerContainer {
-    font-family: "Poppins", sans-serif;
     text-align: center;
     padding: 15px;
     background-color: #0e0d0d;
@@ -60,10 +59,9 @@
   }
 }
 
-/* Styling for responsive design desktop */
+/* Styling for responsive design larger screens */
 @media (min-width: 768px) {
   .footerContainer {
-    font-family: "Poppins", sans-serif;
     padding: 15px;
     background-color: #0e0d0d;
     color: #f3ebeb;

@@ -1,6 +1,6 @@
+/* Styling for "Categories-page */
 .category {
   text-align: center;
-  font-family: "Poppins", sans-serif;
 }
 
 .categoryContainer {
@@ -30,6 +30,8 @@
   object-fit: cover;
   border-radius: 15px;
 }
+
+/* Responsive design adjustments for larger screens  */
 @media (min-width: 768px) {
   .categoryCard:hover {
     transform: scale(1.1);

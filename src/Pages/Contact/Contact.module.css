@@ -5,14 +5,15 @@
     justify-content: center;
     font-family: "Poppins", sans-serif;
     text-align: center;
-    background-color: #0e0d0d;
+    background-color: #4a0644;
     padding: 30px;
     color: #f3ebeb;
     margin: 20px 10px 5px 10px;
+    border-radius: 12px;
   }
   .contactPagecontainer span {
     font-weight: bold;
-    font-size: 18px;
+    color: rgb(168, 242, 165);
   }
 
   .contactform {
@@ -39,8 +40,8 @@
   }
 
   .sendbutton {
-    background-color: #6016c1;
-    color: white;
+    background-color: #6c0964;
+    color: #f3ebeb;
     padding: 10px 15px;
     border: none;
     border-radius: 12px;
@@ -59,7 +60,7 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    background-color: #0e0d0d;
+    background-color: #4a0644;
     padding: 30px;
     color: #f3ebeb;
     font-size: 18px;
@@ -67,7 +68,7 @@
   }
   .contactPagecontainer span {
     font-weight: bold;
-    font-size: 24px;
+    color: rgb(168, 242, 165);
   }
 
   .contactform {
@@ -82,7 +83,7 @@
 
   .formlabel {
     display: block;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .forminput,
@@ -90,13 +91,14 @@
     width: 95%;
     padding: 8px;
     margin-bottom: 15px;
+    margin-top: 15px;
     border: 1px solid #f3ebeb;
     border-radius: 4px;
   }
 
   .sendbutton {
-    background-color: #6016c1;
-    color: white;
+    background-color: #6c0964;
+    color: #f3ebeb;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
@@ -104,6 +106,6 @@
   }
 
   .sendbutton:hover {
-    background-color: #3b0b79;
+    background-color: #4a0644;
   }
 }

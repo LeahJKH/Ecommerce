@@ -11,8 +11,7 @@
   color: #f3ebeb;
   margin: 20px auto;
   padding: 20px;
-
-  background-color: #0e0d0d;
+  background-color: #4a0644;
   box-shadow: 0 0 10px rgba(196, 15, 15, 0.1);
 }
 .section h1 {
@@ -38,5 +37,6 @@
   .section {
     padding: 30px;
     max-width: 50%;
+    background-color: #4a0644;
   }
 }

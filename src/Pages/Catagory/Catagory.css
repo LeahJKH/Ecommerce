@@ -10,26 +10,29 @@
 }
 
 .categoryCard {
+  font-size: smaller;
   transition: all 500ms;
   color: #f3ebeb;
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 30vh;
-  width: 20vh;
+  width: 30vh;
   margin: 1.5rem;
-  padding: 0.5rem;
+  padding: 1rem 1.5rem;
   border-radius: 12px;
   background-color: #4a0644;
   border: 2px black solid;
   box-shadow: 1px 1px 1px rgba(18, 17, 17, 0.3);
 }
-
+.categoryCard h3 {
+  margin: 0;
+}
 .cardImage {
-  width: 100px;
-  height: 190px;
-  object-fit: contain;
-  border-radius: 15px;
+  height: 180px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 12px;
 }
 
 @media (min-width: 768px) {
@@ -40,7 +43,7 @@
   }
 }
 
-  /*shop stuff*/
+/*shop stuff*/
 .centering {
   width: 100%;
   height: 100%;

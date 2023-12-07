@@ -4,6 +4,15 @@ import "./Catagory.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
 const categories = [
+<<<<<<< HEAD
+  { name: "Boats", image: "../../../public/pictures/boats.png" },
+  { name: "Cars", image: "../../../public/pictures/cars.png" },
+  { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
+  { name: "Houses", image: "../../../public/pictures/houses.png" },
+  { name: "Companies", image: "../../../public/pictures/companies.png" },
+  { name: "jewelery", image: "../../../public/pictures/jewelry.png" },
+  { name: "Family", image: "../../../public/pictures/Family.jpg" },
+=======
   { name: "Boats", image: "./pictures/boats.png" },
   { name: "Cars", image: "./pictures/cars.png" },
   { name: "men's clothing", image: "./pictures/clothes.png" },
@@ -11,12 +20,12 @@ const categories = [
   { name: "Companies", image: "./pictures/companies.png" },
   { name: "Jewelry", image: "./pictures/jewelry.png" },
   { name: "Family", image: "./pictures/Family.jpg" },
+>>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
 ];
-
 
 export function Category() {
   function returnPage() {
-    location.reload()
+    location.reload();
   }
   const [selectedCategory, setSelectedCategory] = useState(() => {
     return localStorage.getItem("selectedCategory") || "";
@@ -26,7 +35,7 @@ export function Category() {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    const apiUrl = "http://localhost:49999/products"; //if you dont have our local host you cant see the cart in action
+    const apiUrl = "https://fakestoreapi.com/products"; //if you dont have our local host you cant see the cart in action
 
     fetch(apiUrl)
       .then((res) => res.json())
@@ -46,6 +55,25 @@ export function Category() {
         <h2>Category Page</h2>
       </div>
       {showShop ? (
+<<<<<<< HEAD
+        <div>
+          <button onClick={returnPage} className={Style.btnReturn}>
+            Return
+          </button>
+          <div className={Style.centering}>
+            <div className={Style.cardFlex}>
+              {products
+                .filter(
+                  (product) =>
+                    !selectedCategory ||
+                    product.category.toLowerCase() ===
+                      selectedCategory.toLowerCase()
+                )
+                .map((product, index) => (
+                  <ProductCard key={index} product={product} />
+                ))}
+            </div>
+=======
        <div>
        <button onClick={returnPage} className="btnReturn">RETURN</button>
        <div className="centering">
@@ -60,8 +88,8 @@ export function Category() {
               .map((product, index) => (
                 <ProductCard key={index} product={product} />
               ))}
+>>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
           </div>
-        </div>
         </div>
       ) : (
         <div className="categoryContainer">

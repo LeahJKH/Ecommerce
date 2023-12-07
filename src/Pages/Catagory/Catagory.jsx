@@ -4,23 +4,13 @@ import "./Catagory.css";
 import { ProductCard } from "../../Components/ProductCard/ProductCard";
 
 const categories = [
-<<<<<<< HEAD
-  { name: "Boats", image: "../../../public/pictures/boats.png" },
-  { name: "Cars", image: "../../../public/pictures/cars.png" },
-  { name: "men's clothing", image: "../../../public/pictures/clothes.png" },
-  { name: "Houses", image: "../../../public/pictures/houses.png" },
-  { name: "Companies", image: "../../../public/pictures/companies.png" },
-  { name: "jewelery", image: "../../../public/pictures/jewelry.png" },
-  { name: "Family", image: "../../../public/pictures/Family.jpg" },
-=======
-  { name: "Boats", image: "./pictures/boats.png" },
-  { name: "Cars", image: "./pictures/cars.png" },
-  { name: "men's clothing", image: "./pictures/clothes.png" },
-  { name: "Houses", image: "./pictures/houses.png" },
-  { name: "Companies", image: "./pictures/companies.png" },
-  { name: "Jewelry", image: "./pictures/jewelry.png" },
-  { name: "Family", image: "./pictures/Family.jpg" },
->>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
+  { name: "Boats", image: "./public/pictures/boats.png" },
+  { name: "Cars", image: "./public/pictures/cars.png" },
+  { name: "men's clothing", image: "./public/pictures/clothes.png" },
+  { name: "Houses", image: "./public/pictures/houses.png" },
+  { name: "Companies", image: "./public/pictures/companies.png" },
+  { name: "jewelery", image: "./public/pictures/jewelry.png" },
+  { name: "Family", image: "./public/pictures/Family.jpg" },
 ];
 
 export function Category() {
@@ -55,13 +45,12 @@ export function Category() {
         <h2>Category Page</h2>
       </div>
       {showShop ? (
-<<<<<<< HEAD
         <div>
-          <button onClick={returnPage} className={Style.btnReturn}>
+          <button onClick={returnPage} className="btnReturn">
             Return
           </button>
-          <div className={Style.centering}>
-            <div className={Style.cardFlex}>
+          <div className="centering">
+            <div className="cardFlex">
               {products
                 .filter(
                   (product) =>
@@ -73,22 +62,6 @@ export function Category() {
                   <ProductCard key={index} product={product} />
                 ))}
             </div>
-=======
-       <div>
-       <button onClick={returnPage} className="btnReturn">RETURN</button>
-       <div className="centering">
-        <div className="cardFlex">
-            {products
-              .filter(
-                (product) =>
-                  !selectedCategory ||
-                  product.category.toLowerCase() ===
-                    selectedCategory.toLowerCase()
-              )
-              .map((product, index) => (
-                <ProductCard key={index} product={product} />
-              ))}
->>>>>>> 876792cbddcc4cf7d04c47bc71ca856ea7c10079
           </div>
         </div>
       ) : (

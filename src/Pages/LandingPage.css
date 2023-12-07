@@ -19,7 +19,7 @@
 .slide {
   position: absolute;
   inset: 0;
-  opacity: 0;
+  opacity: 1;
 }
 
 .slide > img {
@@ -31,9 +31,7 @@
   border-radius: 20px;
 }
 
-.slide[data-active] {
-  opacity: 1;
-}
+
 
 .carousel-button {
   position: absolute;
@@ -69,7 +67,7 @@
 }
 
 /* Category Section */
-.carusel-categories {
+.categories {
   display: flex;
   justify-content: center;
   gap: 1rem;
@@ -91,7 +89,7 @@
 }
 
 .catergory-card > img {
-  width: 90%;
+  height: 80%;
 }
 
 /* Recommended Section */
@@ -104,6 +102,6 @@
 .list-recommended > img {
   width: 100%;
   border: 1px solid black;
-  border-radius: 32px;
+  border-radius: 70px;
   margin-bottom: 5px;
 }

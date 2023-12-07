@@ -1,22 +1,61 @@
 import "./LandingPage.css"
 import boat from "../../public/pictures/boats.png"
+import { useState } from "react"
 
 
 
 export function LandingPage() {
+  let [currentSlideIndex, setCurrentSlideIndex] = useState(0)
+
+  // Handle click on the previous button
+  const handlePreviousClick = () => {
+    const slides = document.querySelectorAll("ul.carousel li");
+    const currentSlide = slides[currentSlideIndex];
+    const previousSlide = slides[currentSlideIndex - 1];
+
+    // Slide to previous slide
+    previousSlide.style.display = "block";
+    currentSlide.style.display = "none";
+
+    // Update the current slide
+    setCurrentSlideIndex -= 1;
+  };
+
+  // Handle click on the next button
+  const handleNextClick = () => {
+    const slides = document.querySelectorAll("ul.carousel li");
+    const currentSlide = slides[currentSlideIndex];
+    const nextSlide = slides[currentSlideIndex + 1];
+
+    // Slide to the next slide
+    nextSlide.style.display = "block";
+    currentSlide.style.display = "none";
+
+    // Update the current slide index
+    setCurrentSlideIndex += 1;
+  }
+
 
   return (
     <>
       <div className="mainContent--container">
         <h1 className="main--title">Popular Items</h1>
         <div className="carousel">
-          <button className="carousel-button prev">
+          <button
+            
+            onClick={handlePreviousClick}
+            className="carousel-button prev"
+          >
             &#8656;
           </button>
-          <button className="carousel-button next">
+          <button
+            
+            onClick={handleNextClick}
+            className="carousel-button next"
+          >
             &#8658;
           </button>
-          <ul data-slides>
+          <ul>
             <li className="slide">
               <img src={boat} alt="boat" />
             </li>
@@ -36,7 +75,7 @@ export function LandingPage() {
         </div>
 
         <h1>Categories</h1>
-        <div className="carusel-categories">
+        <div className="categories">
           <div className="catergory-card">
             <h3>Category name</h3>
             <img src={boat} alt="picture" />

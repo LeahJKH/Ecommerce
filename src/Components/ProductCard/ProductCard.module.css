@@ -5,7 +5,7 @@
 }
 .cardProduct {
   font-family: "Poppins", sans-serif;
-  background-color: #0e0d0d;
+  background-color: #4a0644;
   border-radius: 20px;
   text-align: center;
   color: #f3ebeb;
@@ -41,12 +41,14 @@
   height: 85px;
   color: #f3ebeb;
   font-weight: 800;
-  padding: 10px;
+  padding: 0px 10px 0px 15px;
   overflow-y: scroll;
 }
 .productBtn:hover {
   background-color: #390979;
 }
+
+/* Styling for scrollbar on item description */
 ::-webkit-scrollbar {
   width: 10px;
 }

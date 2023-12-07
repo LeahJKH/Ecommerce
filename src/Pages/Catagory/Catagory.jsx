@@ -37,7 +37,9 @@ export function Category() {
 
   return (
     <div className={Styles.category}>
-      <h2>Category Page</h2>
+      <div className={Style.categoryH2}>
+        <h2>Category Page</h2>
+      </div>
       {showShop ? (
         <div className={Style.centering}>
           <div className={Style.cardFlex}>

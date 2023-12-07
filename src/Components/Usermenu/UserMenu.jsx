@@ -4,7 +4,7 @@ export default function UserMenu({ toggleUserMenu }) {
     <div className={Style.Flexify}>
       <div>
         <img
-          src="../../../public/icons/personBlack.svg"
+          src="./icons/personBlack.svg"
           alt="User icon"
           className={Style.UserImg}
         />

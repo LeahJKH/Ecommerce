@@ -20,7 +20,7 @@ export default function Hamburger({ toggleBurgerMenu }) {
             X
           </h1>
           <img
-            src="../../../public/icons/Loggout.svg"
+            src="./icons/Loggout.svg"
             alt="Logout-icon"
             className={Style.MenuImg}
           />
